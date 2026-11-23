@@ -362,7 +362,7 @@ export function TryIt({ slug, tryIt, samples, context, stepLabels, liveAvailable
           <div className="pane-head">
             <h3 className="label">Output</h3>
             {run.kind === "done" && (
-              <span className="tag tag-plain">{run.source === "sample" ? "Sample output" : "Live output"}</span>
+              <span className="tag tag-status">{run.source === "sample" ? "Sample output" : "Live output"}</span>
             )}
           </div>
 

@@ -1,4 +1,4 @@
-import { getDemosByCategory } from "@/lib/demos";
+import { getDemosByCategory, loadAllCompanyLogos } from "@/lib/demos";
 import { categoryId } from "@/lib/schema";
 import { howWeWork } from "@/lib/site";
 import { isLiveConfigured } from "@/lib/live/config";
@@ -15,7 +15,7 @@ export default function HomePage() {
       <section className="hero" aria-labelledby="page-title">
         <p className="label label-muted">Alert Global Tech · AI demos</p>
         <h1 id="page-title" className="h1">
-          AI tools that give your team hours back.
+          AI tools that give your team <mark className="hl">hours back.</mark>
         </h1>
         <p className="lede">Working demos with fictional companies and sample data. No signup needed.</p>
       </section>
@@ -29,7 +29,7 @@ export default function HomePage() {
         ))}
       </nav>
 
-      <Catalogue groups={groups} live={live} />
+      <Catalogue groups={groups} live={live} logos={loadAllCompanyLogos()} />
 
       <section id="how-we-work" className="catalogue-section" aria-labelledby="how-title">
         <div className="section-head" style={{ borderBottom: 0 }}>

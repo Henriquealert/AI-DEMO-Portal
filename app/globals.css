@@ -1464,3 +1464,64 @@ ol.actions li > span:first-child::before {
   display: grid;
   gap: 20px;
 }
+
+/* ---------- Brand marks ---------- */
+.alert-mark {
+  display: inline-block;
+  flex: none;
+  background: var(--fg);
+  -webkit-mask: url("/brand/alert-mark.png") center / contain no-repeat;
+  mask: url("/brand/alert-mark.png") center / contain no-repeat;
+}
+.logo {
+  align-items: center;
+}
+.co-logo {
+  display: inline-block;
+  flex: none;
+  color: var(--fg);
+}
+.co-logo svg {
+  width: 100%;
+  height: 100%;
+}
+.co-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.co-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--text-sm);
+}
+
+/* ---------- Acid Lime accents ----------
+ * Lime appears only as solid fills with ink text: status tags, the one
+ * headline highlight on the home page, the processing bar, and the hover
+ * edge of a catalogue card. Never as text colour.
+ */
+.hl {
+  background: var(--tag-fill);
+  color: var(--on-tag);
+  padding: 0 0.08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.progress > span {
+  background: var(--tag-fill);
+}
+a.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: transparent;
+}
+a.card:hover::before,
+a.card:focus-visible::before {
+  background: var(--tag-fill);
+}

@@ -5,7 +5,11 @@
   "category": "KNOWLEDGE",
   "status": "SAMPLE",
   "order": 1,
-  "company": { "name": "Ondamar Dental Studio", "industry": "Dental practice" },
+  "company": {
+    "name": "Ondamar Dental Studio",
+    "industry": "Dental practice",
+    "logo": "logo.svg"
+  },
   "spec": {
     "input": "A staff question in plain language",
     "output": "Short answer with section citations and quotes",
@@ -15,16 +19,40 @@
   },
   "problem": "Staff answer routine questions by searching a long handbook or asking the practice manager. The manager is interrupted many times a day, and answers given from memory are not always the same as the handbook.",
   "steps": [
-    { "label": "Input", "text": "A staff member asks a question in Teams." },
-    { "label": "AI step", "text": "Claude searches the staff handbook from SharePoint and writes a short answer from the relevant sections only." },
-    { "label": "Check", "text": "Every answer cites the section and quotes the handbook. If the handbook does not cover the question, it says so and names who to ask." },
-    { "label": "Output", "text": "The answer and citations appear in the Teams chat." }
+    {
+      "label": "Input",
+      "text": "A staff member asks a question in Teams."
+    },
+    {
+      "label": "AI step",
+      "text": "Claude searches the staff handbook from SharePoint and writes a short answer from the relevant sections only."
+    },
+    {
+      "label": "Check",
+      "text": "Every answer cites the section and quotes the handbook. If the handbook does not cover the question, it says so and names who to ask."
+    },
+    {
+      "label": "Output",
+      "text": "The answer and citations appear in the Teams chat."
+    }
   ],
   "stack": [
-    { "name": "Claude", "role": "Answers from the handbook only and cites the sections it used." },
-    { "name": "SharePoint", "role": "Holds the current staff handbook, the single source for answers." },
-    { "name": "Teams", "role": "Where staff ask questions and read answers, through a Copilot Studio agent." },
-    { "name": "Microsoft 365", "role": "Staff accounts and permissions, so only staff can ask." }
+    {
+      "name": "Claude",
+      "role": "Answers from the handbook only and cites the sections it used."
+    },
+    {
+      "name": "SharePoint",
+      "role": "Holds the current staff handbook, the single source for answers."
+    },
+    {
+      "name": "Teams",
+      "role": "Where staff ask questions and read answers, through a Copilot Studio agent."
+    },
+    {
+      "name": "Microsoft 365",
+      "role": "Staff accounts and permissions, so only staff can ask."
+    }
   ],
   "tryIt": {
     "inputLabel": "Staff question",
@@ -34,13 +62,40 @@
     "acceptUpload": false
   },
   "context": [
-    { "label": "Staff handbook (fictional)", "file": "context/handbook.txt", "format": "text" }
+    {
+      "label": "Staff handbook (fictional)",
+      "file": "context/handbook.txt",
+      "format": "text"
+    }
   ],
   "samples": [
-    { "id": "q1", "label": "Late cancellation fee", "input": "samples/q1.txt", "output": "outputs/q1.json" },
-    { "id": "q2", "label": "Autoclave log sign-off", "input": "samples/q2.txt", "output": "outputs/q2.json" },
-    { "id": "q3", "label": "Saturday shift swap", "input": "samples/q3.txt", "output": "outputs/q3.json" },
-    { "id": "q4", "label": "Not in the handbook", "input": "samples/q4.txt", "output": "outputs/q4.json" }
+    {
+      "id": "q1",
+      "label": "Late cancellation fee",
+      "input": "samples/q1.txt",
+      "output": "outputs/q1.json"
+    },
+    {
+      "id": "q2",
+      "label": "Autoclave log sign-off",
+      "input": "samples/q2.txt",
+      "output": "outputs/q2.json"
+    },
+    {
+      "id": "q3",
+      "label": "Saturday shift swap",
+      "input": "samples/q3.txt",
+      "output": "outputs/q3.json"
+    },
+    {
+      "id": "q4",
+      "label": "Not in the handbook",
+      "input": "samples/q4.txt",
+      "output": "outputs/q4.json"
+    }
   ],
-  "live": { "enabled": true, "prompt": "prompt.md" }
+  "live": {
+    "enabled": true,
+    "prompt": "prompt.md"
+  }
 }

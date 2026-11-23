@@ -35,7 +35,12 @@ const fullSchema = z.object({
   category: z.enum(CATEGORIES),
   status: z.enum(["SAMPLE", "NEW", "BETA"]),
   order: z.number(),
-  company: z.object({ name: z.string(), industry: z.string() }),
+  company: z.object({
+    name: z.string(),
+    industry: z.string(),
+    /** Optional SVG mark in the demo folder, drawn with currentColor. */
+    logo: z.string().regex(/^[\w./-]+\.svg$/).optional(),
+  }),
   spec: z.object({
     input: z.string(),
     output: z.string(),

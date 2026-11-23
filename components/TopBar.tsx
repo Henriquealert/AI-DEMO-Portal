@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { AlertMark } from "./AlertLogo";
 
 export function TopBar() {
   return (
     <header className="topbar">
       <div className="wrap topbar-inner">
-        {/* TODO(brand): replace text placeholder with the Alert logo file (one logo only). */}
         <Link href="/" className="logo" aria-label={`${site.name} ${site.portalName}, home`}>
-          {site.logoText}
+          <AlertMark height={28} />
           <small>{site.portalName}</small>
         </Link>
         <nav className="nav" aria-label="Main">

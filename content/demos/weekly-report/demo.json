@@ -5,7 +5,11 @@
   "category": "REPORTING",
   "status": "SAMPLE",
   "order": 1,
-  "company": { "name": "Halbrook Home Services", "industry": "Home services" },
+  "company": {
+    "name": "Halbrook Home Services",
+    "industry": "Home services",
+    "logo": "logo.svg"
+  },
   "spec": {
     "input": "Weekly CSV export of completed jobs",
     "output": "Written weekly report with key figures, charts and data checks",
@@ -15,18 +19,48 @@
   },
   "problem": "Every Monday the operations manager exports last week's completed jobs, builds pivot tables by hand and writes a summary for the owners. It is slow, the numbers are easy to get wrong, and small problems like duplicate rows or missing ratings rarely get noticed.",
   "steps": [
-    { "label": "Input", "text": "The weekly job export lands in a SharePoint folder as a CSV: one row per completed job." },
-    { "label": "AI step", "text": "Claude computes the totals from the rows, compares them with the 4-week average and writes a short report with charts." },
-    { "label": "Check", "text": "Duplicate job IDs, missing ratings and other data gaps are flagged, and the report states how many rows it used." },
-    { "label": "Output", "text": "The report lands in Outlook or a Teams channel for the owners every Monday morning." }
+    {
+      "label": "Input",
+      "text": "The weekly job export lands in a SharePoint folder as a CSV: one row per completed job."
+    },
+    {
+      "label": "AI step",
+      "text": "Claude computes the totals from the rows, compares them with the 4-week average and writes a short report with charts."
+    },
+    {
+      "label": "Check",
+      "text": "Duplicate job IDs, missing ratings and other data gaps are flagged, and the report states how many rows it used."
+    },
+    {
+      "label": "Output",
+      "text": "The report lands in Outlook or a Teams channel for the owners every Monday morning."
+    }
   ],
   "stack": [
-    { "name": "Claude", "role": "Computes the figures, writes the report and picks the charts." },
-    { "name": "SharePoint", "role": "Stores the weekly job exports." },
-    { "name": "Excel", "role": "Source of the job export and the 4-week baseline." },
-    { "name": "Power Automate", "role": "Runs the report every Monday when the new export arrives." },
-    { "name": "Outlook", "role": "Delivers the report to the owners." },
-    { "name": "Teams", "role": "Posts the report in the operations channel." }
+    {
+      "name": "Claude",
+      "role": "Computes the figures, writes the report and picks the charts."
+    },
+    {
+      "name": "SharePoint",
+      "role": "Stores the weekly job exports."
+    },
+    {
+      "name": "Excel",
+      "role": "Source of the job export and the 4-week baseline."
+    },
+    {
+      "name": "Power Automate",
+      "role": "Runs the report every Monday when the new export arrives."
+    },
+    {
+      "name": "Outlook",
+      "role": "Delivers the report to the owners."
+    },
+    {
+      "name": "Teams",
+      "role": "Posts the report in the operations channel."
+    }
   ],
   "tryIt": {
     "inputLabel": "Weekly job export (CSV)",
@@ -36,11 +70,28 @@
     "acceptUpload": false
   },
   "context": [
-    { "label": "4-week average, Sep 14 to Oct 10 (fictional)", "file": "context/four-week-average.csv", "format": "csv" }
+    {
+      "label": "4-week average, Sep 14 to Oct 10 (fictional)",
+      "file": "context/four-week-average.csv",
+      "format": "csv"
+    }
   ],
   "samples": [
-    { "id": "ordinary-week", "label": "Week of Oct 12: ordinary week", "input": "samples/week-2026-10-12.csv", "output": "outputs/week-2026-10-12.json" },
-    { "id": "hvac-spike", "label": "Week of Oct 19: HVAC spike", "input": "samples/week-2026-10-19.csv", "output": "outputs/week-2026-10-19.json" }
+    {
+      "id": "ordinary-week",
+      "label": "Week of Oct 12: ordinary week",
+      "input": "samples/week-2026-10-12.csv",
+      "output": "outputs/week-2026-10-12.json"
+    },
+    {
+      "id": "hvac-spike",
+      "label": "Week of Oct 19: HVAC spike",
+      "input": "samples/week-2026-10-19.csv",
+      "output": "outputs/week-2026-10-19.json"
+    }
   ],
-  "live": { "enabled": true, "prompt": "prompt.md" }
+  "live": {
+    "enabled": true,
+    "prompt": "prompt.md"
+  }
 }

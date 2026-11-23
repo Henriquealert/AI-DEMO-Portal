@@ -5,7 +5,11 @@
   "category": "DOCUMENTS",
   "status": "SAMPLE",
   "order": 1,
-  "company": { "name": "Tessaro Distribution", "industry": "Wholesale distribution" },
+  "company": {
+    "name": "Tessaro Distribution",
+    "industry": "Wholesale distribution",
+    "logo": "logo.svg"
+  },
   "spec": {
     "input": "Supplier invoice (PDF, image or text)",
     "output": "Structured invoice table with checks against open purchase orders",
@@ -15,16 +19,40 @@
   },
   "problem": "Accounts payable keys every supplier invoice into the system by hand, then checks it line by line against the purchase order. Price and quantity differences are easy to miss when the queue is long, and they surface later as overpayments or disputes.",
   "steps": [
-    { "label": "Input", "text": "Invoice arrives by email or is dropped into a SharePoint folder." },
-    { "label": "AI step", "text": "Claude reads the document and extracts header fields and line items." },
-    { "label": "Check", "text": "Totals are recalculated and every line is compared with the open purchase order." },
-    { "label": "Output", "text": "Clean invoices go to posting. Flagged ones land in the AP review queue with the reasons." }
+    {
+      "label": "Input",
+      "text": "Invoice arrives by email or is dropped into a SharePoint folder."
+    },
+    {
+      "label": "AI step",
+      "text": "Claude reads the document and extracts header fields and line items."
+    },
+    {
+      "label": "Check",
+      "text": "Totals are recalculated and every line is compared with the open purchase order."
+    },
+    {
+      "label": "Output",
+      "text": "Clean invoices go to posting. Flagged ones land in the AP review queue with the reasons."
+    }
   ],
   "stack": [
-    { "name": "Claude", "role": "Reads the invoice and extracts header fields and line items." },
-    { "name": "SharePoint", "role": "Holds incoming invoices and the review queue." },
-    { "name": "Power Automate", "role": "Picks up new invoices, runs the checks and routes the result." },
-    { "name": "Excel", "role": "Open purchase order export used for matching." }
+    {
+      "name": "Claude",
+      "role": "Reads the invoice and extracts header fields and line items."
+    },
+    {
+      "name": "SharePoint",
+      "role": "Holds incoming invoices and the review queue."
+    },
+    {
+      "name": "Power Automate",
+      "role": "Picks up new invoices, runs the checks and routes the result."
+    },
+    {
+      "name": "Excel",
+      "role": "Open purchase order export used for matching."
+    }
   ],
   "tryIt": {
     "inputLabel": "Supplier invoice",
@@ -34,12 +62,34 @@
     "acceptUpload": true
   },
   "context": [
-    { "label": "Open purchase orders (fictional)", "file": "context/open-purchase-orders.csv", "format": "csv" }
+    {
+      "label": "Open purchase orders (fictional)",
+      "file": "context/open-purchase-orders.csv",
+      "format": "csv"
+    }
   ],
   "samples": [
-    { "id": "brindlecove", "label": "Brindlecove Packaging: matches PO", "input": "samples/invoice-brindlecove.txt", "output": "outputs/invoice-brindlecove.json" },
-    { "id": "northvale", "label": "Northvale Fasteners: price and quantity differences", "input": "samples/invoice-northvale.txt", "output": "outputs/invoice-northvale.json" },
-    { "id": "quillmere", "label": "Quillmere Cleaning: missing PO, wrong due date", "input": "samples/invoice-quillmere.txt", "output": "outputs/invoice-quillmere.json" }
+    {
+      "id": "brindlecove",
+      "label": "Brindlecove Packaging: matches PO",
+      "input": "samples/invoice-brindlecove.txt",
+      "output": "outputs/invoice-brindlecove.json"
+    },
+    {
+      "id": "northvale",
+      "label": "Northvale Fasteners: price and quantity differences",
+      "input": "samples/invoice-northvale.txt",
+      "output": "outputs/invoice-northvale.json"
+    },
+    {
+      "id": "quillmere",
+      "label": "Quillmere Cleaning: missing PO, wrong due date",
+      "input": "samples/invoice-quillmere.txt",
+      "output": "outputs/invoice-quillmere.json"
+    }
   ],
-  "live": { "enabled": true, "prompt": "prompt.md" }
+  "live": {
+    "enabled": true,
+    "prompt": "prompt.md"
+  }
 }

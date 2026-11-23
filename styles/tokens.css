@@ -8,8 +8,8 @@
  * Every other colour on the site is derived from these four. Do not add more.
  */
 :root {
-  --deep-ink: #0e1014; /* TODO(brand): Deep Ink hex */
-  --soft-ivory: #f4f1ea; /* TODO(brand): Soft Ivory hex */
+  --deep-ink: #101b32; /* Sampled from the logo file. TODO(brand): confirm against the guidelines */
+  --soft-ivory: #f5f4ef; /* Sampled from the logo file. TODO(brand): confirm against the guidelines */
   --electric-blue: #3b6cff; /* TODO(brand): Electric Blue hex */
   --acid-lime: #c8f03c; /* TODO(brand): Acid Lime hex */
 }
@@ -39,7 +39,7 @@
    * text (19px bold), so they need 3:1. `npm run check:contrast` reports which
    * of ink or ivory reads better on the final blue: set it here.
    */
-  --on-accent: var(--deep-ink); /* TODO(brand): confirm after check:contrast */
+  --on-accent: var(--soft-ivory); /* Re-check with npm run check:contrast if the blue changes */
 
   /* Acid Lime: status tags only. Always a solid fill with ink text, never text colour. */
   --tag-fill: var(--acid-lime);

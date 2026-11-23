@@ -90,3 +90,25 @@ export function loadContext(demo: DemoConfig): LoadedContext[] {
 export function loadPrompt(demo: DemoConfig): string {
   return readDemoFile(demo.slug, demo.live.prompt);
 }
+
+/**
+ * Inline SVG for a demo's fictional company logo (or undefined).
+ * Logos are repo content; this still rejects scripts and event handlers.
+ */
+export function loadCompanyLogo(demo: AnyDemoConfig): string | undefined {
+  if (!isFullDemo(demo) || !demo.company.logo) return undefined;
+  const svg = readDemoFile(demo.slug, demo.company.logo).trim();
+  if (!svg.startsWith("<svg") || /<script|\son\w+=|javascript:|<foreignObject/i.test(svg)) {
+    throw new Error(`content/demos/${demo.slug}/${demo.company.logo} is not a plain SVG`);
+  }
+  return svg;
+}
+
+export function loadAllCompanyLogos(): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const d of getAllDemos()) {
+    const svg = loadCompanyLogo(d);
+    if (svg) out[d.slug] = svg;
+  }
+  return out;
+}

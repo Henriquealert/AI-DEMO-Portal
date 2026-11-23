@@ -14,7 +14,15 @@ function haystack(d: AnyDemoConfig) {
   return parts.join(" ").toLowerCase();
 }
 
-export function Catalogue({ groups, live }: { groups: Group[]; live: boolean }) {
+export function Catalogue({
+  groups,
+  live,
+  logos,
+}: {
+  groups: Group[];
+  live: boolean;
+  logos: Record<string, string>;
+}) {
   const [q, setQ] = useState("");
   const query = q.trim().toLowerCase();
   const terms = query.split(/\s+/).filter(Boolean);
@@ -82,7 +90,7 @@ export function Catalogue({ groups, live }: { groups: Group[]; live: boolean }) 
                 <ul className={g.demos.length === 1 ? "cat-cards single" : "cat-cards"}>
                   {g.demos.map((d) => (
                     <li key={d.slug}>
-                      <DemoCard demo={d} live={live} />
+                      <DemoCard demo={d} live={live} logo={logos[d.slug]} />
                     </li>
                   ))}
                 </ul>

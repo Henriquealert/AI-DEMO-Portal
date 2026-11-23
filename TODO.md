@@ -4,10 +4,10 @@
 
 | # | Where | What is needed |
 |---|---|---|
-| 1 | `styles/tokens.css` | Exact hex values for Deep Ink, Soft Ivory, Electric Blue and Acid Lime. The current values are neutral stand-ins. After replacing them, run `npm run check:contrast`. |
-| 2 | `styles/tokens.css` (`--on-accent`) | Confirm the label colour on blue buttons (ink or ivory). `check:contrast` prints which one to use. |
-| 3 | `app/layout.tsx` (`themeColor`) | Same Deep Ink and Soft Ivory hex values (browser UI colour on mobile). |
-| 4 | `components/TopBar.tsx`, `lib/site.ts` | Alert logo file (SVG preferred). There is a text placeholder "ALERT" for now. |
+| 1 | `styles/tokens.css` | Electric Blue and Acid Lime are still stand-ins. Deep Ink (#101b32) and Soft Ivory (#f5f4ef) were sampled from the logo file: confirm them against the guidelines. After any change, run `npm run check:contrast`. |
+| 2 | `styles/tokens.css` (`--on-accent`) | Blue button labels are ivory (3.99:1 with the stand-in blue, passes for 19px bold). Re-check when the real blue is in. |
+| 3 | `app/layout.tsx` (`themeColor`) | Uses the sampled ink and ivory. Update if the confirmed values differ. |
+| 4 | `public/brand/alert-mark.png` | The logo mark was cut from the 800px PNG you sent. An SVG master would be sharper at large sizes: send it and it drops in as the mask source. |
 | 5 | `app/layout.tsx` | Open Graph share image, 1200x630, at `public/og.png`. Title and description tags are already set. |
 | 6 | Every `content/demos/*/demo.json` | `spec.manualTime` and `spec.withTool` are "TODO" (shown as "To be measured"). Replace them with measured figures only. |
 
@@ -37,6 +37,18 @@
 11. **Category labels.** CATEGORIES are fixed in `lib/schema.ts`. Tell me if you want different names or order.
 
 ## Choices I made (easy to change)
+
+- **Logo:** the "a!" mark sits in the top bar only (one logo per page). It takes the text colour, so it is ivory on dark and ink on light. The original navy square is used as the favicon and app icon.
+- **Acid Lime accents:**
+  - Always a solid fill with ink text, never text colour.
+  - Status tags and the "Sample output" tag.
+  - The "hours back." highlight in the home H1, the only highlight on that screen.
+  - The processing bar.
+  - A 3px edge on the catalogue card under the pointer.
+- **Fictional company logos:**
+  - Simple geometric marks in `content/demos/<slug>/logo.svg`.
+  - They show on cards, in the demo header and in the spec table.
+  - They use the text colour, so they work in both modes. They are invented for the demos and are not based on any real brand.
 
 - **No MDX.** All demo copy lives in `demo.json`, which kept each demo to one config file. MDX can be added if longer write-ups are needed.
 - **Contrast:**

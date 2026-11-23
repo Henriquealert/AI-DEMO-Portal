@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllDemos, getDemo, loadContext, loadSamples } from "@/lib/demos";
+import { getAllDemos, getDemo, loadCompanyLogo, loadContext, loadSamples } from "@/lib/demos";
 import { categoryId, isFullDemo } from "@/lib/schema";
 import { isLiveConfigured } from "@/lib/live/config";
 import { TryIt } from "@/components/TryIt";
 import { CtaBand } from "@/components/CtaBand";
 import { ArrowRight } from "@/components/Icons";
+import { CompanyLogo } from "@/components/CompanyLogo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -45,12 +46,19 @@ export default async function DemoPage({ params }: Params) {
   if (!demo) notFound();
 
   const samples = loadSamples(demo);
+  const logo = loadCompanyLogo(demo);
   const context = loadContext(demo);
   const liveAvailable = isLiveConfigured() && demo.live.enabled;
   const status = liveAvailable ? `${demo.status} · LIVE AVAILABLE` : demo.status;
 
   const spec: [string, React.ReactNode][] = [
-    ["Company (fictional)", demo.company.name],
+    [
+      "Company (fictional)",
+      <span key="c" className="co-line">
+        <CompanyLogo svg={logo} size={18} />
+        {demo.company.name}
+      </span>,
+    ],
     ["Industry", demo.company.industry],
     ["Input", demo.spec.input],
     ["Output", demo.spec.output],
@@ -78,9 +86,16 @@ export default async function DemoPage({ params }: Params) {
       <header className="demo-head">
         <div className="tag-row">
           {liveAvailable && <span className="tag tag-status">Live</span>}
-          <span className={demo.status === "SAMPLE" ? "tag tag-plain" : "tag tag-status"}>{demo.status}</span>
+          <span className="tag tag-status">{demo.status}</span>
           <span className="tag">Fictional company, sample data</span>
         </div>
+        <p className="co-lockup">
+          <CompanyLogo svg={logo} size={28} />
+          <span>
+            <strong>{demo.company.name}</strong>
+            <span className="muted"> · {demo.company.industry} · fictional company</span>
+          </span>
+        </p>
         <h1 className="h1 h1-sm">{demo.title}</h1>
         <p className="lede">{demo.description}</p>
       </header>

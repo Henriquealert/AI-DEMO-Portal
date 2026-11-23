@@ -74,7 +74,7 @@ for (const slug of fs.readdirSync(root).sort()) {
     console.log("  coming soon placeholder");
     continue;
   }
-  const files = [config.live.prompt, ...config.context.map((c) => c.file), ...config.samples.flatMap((s) => [s.input, s.output])];
+  const files = [config.live.prompt, ...(config.company.logo ? [config.company.logo] : []), ...config.context.map((c) => c.file), ...config.samples.flatMap((s) => [s.input, s.output])];
   for (const f of files) if (!fs.existsSync(path.join(dir, f))) fail(`missing file ${f}`);
   for (const s of config.samples) {
     const p = path.join(dir, s.output);

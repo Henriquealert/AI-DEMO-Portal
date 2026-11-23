@@ -62,6 +62,7 @@ scripts/                    check-content, check-contrast
 
    ```
    demo.json      config: title, category, company, spec, problem, steps, stack, samples
+   logo.svg       optional fictional company mark (32x32 viewBox, fill="currentColor")
    prompt.md      system prompt for live mode
    samples/       one input file per sample (.txt or .csv)
    outputs/       one output per sample (.json, { "blocks": [...] })
@@ -122,7 +123,8 @@ The live route sets `maxDuration = 60` seconds. Check this fits your Vercel plan
 - No gradients, no shadows, no photos, no decorative illustrations.
 - Helvetica only, with tabular figures everywhere.
 - **Electric Blue** marks links (as an underline), primary buttons, focus rings and active toggles. Text is always ink or ivory, so contrast never depends on the blue.
-- **Acid Lime** is for status tags only, as a solid fill with ink text.
+- **Acid Lime** is always a solid fill with ink text. It is used for status tags, plus at most one highlight per screen (the home H1), the processing bar and the card hover edge.
+- **Logo:** `public/brand/alert-mark.png` is used as a CSS mask, so the mark takes the text colour. It appears once per page, in the top bar.
 - Dark mode is the default. Light mode follows `prefers-color-scheme`.
 
 See `TODO.md` for open items and decisions.

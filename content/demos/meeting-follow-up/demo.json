@@ -5,7 +5,11 @@
   "category": "SALES",
   "status": "SAMPLE",
   "order": 2,
-  "company": { "name": "Marrowbay Logistics", "industry": "Logistics" },
+  "company": {
+    "name": "Marrowbay Logistics",
+    "industry": "Logistics",
+    "logo": "logo.svg"
+  },
   "spec": {
     "input": "Sales call transcript",
     "output": "Summary, action items, follow-up email, CRM fields",
@@ -15,17 +19,44 @@
   },
   "problem": "After each sales call, the account manager rereads notes or the transcript, writes the follow-up email, and updates the CRM by hand. Action items without a clear owner or date slip, and CRM fields like volume, next step and competitors are often left blank.",
   "steps": [
-    { "label": "Input", "text": "The Teams transcript of a sales call is available once the meeting ends." },
-    { "label": "AI step", "text": "Claude summarizes the call and pulls out action items, owners, dates, volumes and competitors." },
-    { "label": "Check", "text": "Anything unclear or missing, such as an unknown volume or an action with no date, is flagged for the account manager." },
-    { "label": "Output", "text": "The follow-up email lands as a draft in Outlook and the CRM fields are proposed for the Dynamics 365 opportunity." }
+    {
+      "label": "Input",
+      "text": "The Teams transcript of a sales call is available once the meeting ends."
+    },
+    {
+      "label": "AI step",
+      "text": "Claude summarizes the call and pulls out action items, owners, dates, volumes and competitors."
+    },
+    {
+      "label": "Check",
+      "text": "Anything unclear or missing, such as an unknown volume or an action with no date, is flagged for the account manager."
+    },
+    {
+      "label": "Output",
+      "text": "The follow-up email lands as a draft in Outlook and the CRM fields are proposed for the Dynamics 365 opportunity."
+    }
   ],
   "stack": [
-    { "name": "Claude", "role": "Reads the transcript and writes the summary, actions, email and CRM fields." },
-    { "name": "Teams", "role": "Source of the meeting transcript." },
-    { "name": "Dynamics 365", "role": "Receives the CRM fields on the opportunity record." },
-    { "name": "Outlook", "role": "Holds the follow-up email as a draft for the account manager." },
-    { "name": "Power Automate", "role": "Runs the flow when a transcript is ready and routes the results." }
+    {
+      "name": "Claude",
+      "role": "Reads the transcript and writes the summary, actions, email and CRM fields."
+    },
+    {
+      "name": "Teams",
+      "role": "Source of the meeting transcript."
+    },
+    {
+      "name": "Dynamics 365",
+      "role": "Receives the CRM fields on the opportunity record."
+    },
+    {
+      "name": "Outlook",
+      "role": "Holds the follow-up email as a draft for the account manager."
+    },
+    {
+      "name": "Power Automate",
+      "role": "Runs the flow when a transcript is ready and routes the results."
+    }
   ],
   "tryIt": {
     "inputLabel": "Call transcript",
@@ -36,8 +67,21 @@
   },
   "context": [],
   "samples": [
-    { "id": "call-1", "label": "Discovery call with a pilot proposal", "input": "samples/call-1.txt", "output": "outputs/call-1.json" },
-    { "id": "call-2", "label": "Renewal check-in", "input": "samples/call-2.txt", "output": "outputs/call-2.json" }
+    {
+      "id": "call-1",
+      "label": "Discovery call with a pilot proposal",
+      "input": "samples/call-1.txt",
+      "output": "outputs/call-1.json"
+    },
+    {
+      "id": "call-2",
+      "label": "Renewal check-in",
+      "input": "samples/call-2.txt",
+      "output": "outputs/call-2.json"
+    }
   ],
-  "live": { "enabled": true, "prompt": "prompt.md" }
+  "live": {
+    "enabled": true,
+    "prompt": "prompt.md"
+  }
 }

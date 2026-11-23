@@ -5,7 +5,11 @@
   "category": "SALES",
   "status": "SAMPLE",
   "order": 1,
-  "company": { "name": "Vantrell Manufacturing", "industry": "Manufacturing" },
+  "company": {
+    "name": "Vantrell Manufacturing",
+    "industry": "Manufacturing",
+    "logo": "logo.svg"
+  },
   "spec": {
     "input": "Customer request email",
     "output": "Draft quote, checks and cover email",
@@ -15,16 +19,40 @@
   },
   "problem": "Quote requests arrive as free-text emails with a mix of SKUs, descriptions and loose quantities. A salesperson looks up each item in the price list, checks minimums and volume breaks, and retypes everything into a quote. Items that are not on the list or quantities that are unclear are easy to miss.",
   "steps": [
-    { "label": "Input", "text": "A customer email asking for parts arrives in the shared sales inbox." },
-    { "label": "AI step", "text": "Claude reads the request and matches each item to the price list, applying minimums and volume breaks." },
-    { "label": "Check", "text": "Unmatched items, unclear quantities and missing freight details are flagged for a person to review." },
-    { "label": "Output", "text": "A draft quote and cover email land in Outlook, and the quote moves to the approval step." }
+    {
+      "label": "Input",
+      "text": "A customer email asking for parts arrives in the shared sales inbox."
+    },
+    {
+      "label": "AI step",
+      "text": "Claude reads the request and matches each item to the price list, applying minimums and volume breaks."
+    },
+    {
+      "label": "Check",
+      "text": "Unmatched items, unclear quantities and missing freight details are flagged for a person to review."
+    },
+    {
+      "label": "Output",
+      "text": "A draft quote and cover email land in Outlook, and the quote moves to the approval step."
+    }
   ],
   "stack": [
-    { "name": "Claude", "role": "Reads the request and matches items to the price list." },
-    { "name": "Excel", "role": "Holds the price list, kept in SharePoint." },
-    { "name": "Outlook", "role": "Where the request arrives and the draft reply is saved." },
-    { "name": "Power Automate", "role": "Moves the draft quote into the approval step." }
+    {
+      "name": "Claude",
+      "role": "Reads the request and matches items to the price list."
+    },
+    {
+      "name": "Excel",
+      "role": "Holds the price list, kept in SharePoint."
+    },
+    {
+      "name": "Outlook",
+      "role": "Where the request arrives and the draft reply is saved."
+    },
+    {
+      "name": "Power Automate",
+      "role": "Moves the draft quote into the approval step."
+    }
   ],
   "tryIt": {
     "inputLabel": "Customer request",
@@ -34,11 +62,28 @@
     "acceptUpload": false
   },
   "context": [
-    { "label": "Sample price list (fictional)", "file": "context/price-list.csv", "format": "csv" }
+    {
+      "label": "Sample price list (fictional)",
+      "file": "context/price-list.csv",
+      "format": "csv"
+    }
   ],
   "samples": [
-    { "id": "request-1", "label": "Control panel enclosures (all items listed)", "input": "samples/request-1.txt", "output": "outputs/request-1.json" },
-    { "id": "request-2", "label": "Pump station cabinets (unlisted item, unclear quantity)", "input": "samples/request-2.txt", "output": "outputs/request-2.json" }
+    {
+      "id": "request-1",
+      "label": "Control panel enclosures (all items listed)",
+      "input": "samples/request-1.txt",
+      "output": "outputs/request-1.json"
+    },
+    {
+      "id": "request-2",
+      "label": "Pump station cabinets (unlisted item, unclear quantity)",
+      "input": "samples/request-2.txt",
+      "output": "outputs/request-2.json"
+    }
   ],
-  "live": { "enabled": true, "prompt": "prompt.md" }
+  "live": {
+    "enabled": true,
+    "prompt": "prompt.md"
+  }
 }

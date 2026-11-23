@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0e1014" }, // TODO(brand): Deep Ink hex
-    { media: "(prefers-color-scheme: light)", color: "#f4f1ea" }, // TODO(brand): Soft Ivory hex
+    { media: "(prefers-color-scheme: dark)", color: "#101b32" }, // Deep Ink (sampled from logo)
+    { media: "(prefers-color-scheme: light)", color: "#f5f4ef" }, // Soft Ivory (sampled from logo)
   ],
 };
 

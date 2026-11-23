@@ -1,8 +1,6 @@
 /** Site-wide settings. Copy and contact details live here, not in components. */
 export const site = {
   name: "Alert Global Tech",
-  // TODO(brand): replace the text logo in components/TopBar.tsx with the logo file.
-  logoText: "ALERT",
   portalName: "AI Demos",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://demos.alertglobal.tech",
   mainSite: "https://alertglobal.tech",

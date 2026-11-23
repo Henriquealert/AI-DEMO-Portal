@@ -2,12 +2,13 @@ import Link from "next/link";
 import type { AnyDemoConfig } from "@/lib/schema";
 import { isFullDemo } from "@/lib/schema";
 import { ArrowRight } from "./Icons";
+import { CompanyLogo } from "./CompanyLogo";
 
 export function stackChip(name: string) {
   return name.toUpperCase();
 }
 
-export function DemoCard({ demo, live }: { demo: AnyDemoConfig; live: boolean }) {
+export function DemoCard({ demo, live, logo }: { demo: AnyDemoConfig; live: boolean; logo?: string }) {
   const chips = (
     <ul className="tag-row" aria-label="Technology used">
       {demo.stack.map((s) => (
@@ -37,13 +38,16 @@ export function DemoCard({ demo, live }: { demo: AnyDemoConfig; live: boolean })
       <div className="card-top">
         <span className="tag-row">
           {showLive && <span className="tag tag-status">Live</span>}
-          <span className={demo.status === "SAMPLE" ? "tag tag-plain" : "tag tag-status"}>{demo.status}</span>
+          <span className="tag tag-status">{demo.status}</span>
         </span>
       </div>
       <h3 className="card-title">{demo.title}</h3>
       <p className="card-desc">{demo.description}</p>
-      <p className="card-meta">
-        {demo.company.name} · {demo.company.industry} · fictional
+      <p className="card-meta co-line">
+        <CompanyLogo svg={logo} size={18} />
+        <span>
+          {demo.company.name} · {demo.company.industry} · fictional
+        </span>
       </p>
       <div className="card-foot">
         {chips}
