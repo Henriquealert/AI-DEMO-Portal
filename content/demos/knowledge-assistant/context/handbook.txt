@@ -1,0 +1,155 @@
+Ondamar Dental Studio - Staff Handbook
+Fictional handbook for demonstration only.
+Version 3, January 2026. Owner: Practice Manager.
+
+About this handbook
+This handbook explains how we run the practice day to day. It applies to all reception, clinical support and administrative staff. Clinical decisions are made by the treating dentist and are not covered here. If something is not covered in this handbook, ask the practice manager.
+
+1. Opening and closing
+
+1.1 Opening
+The first person to arrive opens the building, switches off the alarm and turns on the reception computers. The practice opens to patients at 8:00 on weekdays and 9:00 on Saturdays. Staff on the opening shift arrive at least 20 minutes before opening.
+
+1.2 Opening checks
+Before the first patient arrives, reception checks the day list, the phone messages and the shared inbox. Clinical assistants check that each surgery is stocked and that the sterilisation room is ready for the day.
+
+1.3 Closing
+The last receptionist on shift closes the patient booking screen, checks that the day's payments are reconciled and switches the phones to the out-of-hours message. The last person to leave locks all doors, sets the alarm and records the closing time in the building log at reception.
+
+1.4 Public holidays and closures
+The practice is closed on public holidays. Planned closures are announced on the staff chat at least two weeks ahead, and reception adds a closure message to the booking system and the phone line. Patients booked on a day the practice has to close unexpectedly are called by reception and offered the next available appointment.
+
+2. Patient check-in
+
+2.1 Arrival
+Greet every patient by name and confirm their date of birth before checking them in. Patients should arrive 10 minutes before their appointment.
+
+2.2 Updating details
+Ask every patient to confirm their address, phone number and email at each visit. Changes are entered in the practice system by reception, not by clinical staff.
+
+2.3 Medical history form
+Patients complete or update the medical history form at least once every 12 months, or sooner if they tell us something has changed. Reception hands out the form; the clinical team reviews it. Reception staff do not interpret or give advice on medical history answers.
+
+2.4 Late arrivals
+If a patient arrives more than 15 minutes late, reception checks with the dentist before checking them in. The dentist decides whether the appointment can go ahead or must be rebooked.
+
+3. Scheduling and cancellations
+
+3.1 Booking appointments
+Appointments are booked in the practice system by reception. Always read the booking back to the patient and send the confirmation email before they leave or end the call.
+
+3.2 Cancellation notice
+We ask patients to give at least 24 hours' notice to cancel or move an appointment. Cancellations with less than 24 hours' notice are recorded as late cancellations. A late cancellation fee may be charged, as listed in the fee schedule at reception.
+
+3.3 Waiving the fee
+The first late cancellation in any 12-month period is waived. Any other waiver must be approved by the practice manager. Record the reason for any waiver in the patient's notes.
+
+3.4 Missed appointments
+If a patient does not attend and does not contact us, record the appointment as missed. After two missed appointments in 12 months, reception refers the patient's file to the practice manager before booking again.
+
+3.5 Reminders
+The practice system sends a reminder by text and email two days before each appointment. Reception calls patients who have not confirmed by the afternoon before.
+
+4. Sterilisation and infection control
+
+4.1 Responsibilities
+All clinical staff follow the practice's infection control procedure, which is kept in the clinical folder in the sterilisation room. This section covers record keeping only. Questions about the procedure itself go to the lead dental nurse.
+
+4.2 Logging cycles
+Every autoclave cycle is logged on the cycle sheet by the clinical assistant who runs it, with the time, cycle number and their initials.
+
+4.3 End-of-day sign-off
+The last clinical assistant on shift signs off the autoclave log at the end of the day. The lead dental nurse reviews the log every Friday and initials the weekly summary.
+
+4.4 Where logs are kept
+Completed cycle sheets are filed in the blue binder in the sterilisation room for the current month. At the start of each month, the lead dental nurse scans the previous month's sheets to the Clinical Records library on SharePoint.
+
+4.5 Faults
+If equipment shows an error or a cycle fails, stop using it, label it "Out of use" and tell the lead dental nurse straight away. Record the fault in the equipment log.
+
+5. Patient records and privacy
+
+5.1 Access
+Only open a patient's record when you need it for your work. Every access is recorded by the practice system.
+
+5.2 Screens and paper
+Lock your screen whenever you leave your desk. Paper with patient details is never left at reception and goes in the locked shredding bin at the end of the day.
+
+5.3 Sharing information
+Do not give patient information over the phone until you have confirmed the caller's identity with at least two details from the record. Information is only shared with someone other than the patient if the patient has given written consent, which is recorded in their file.
+
+5.4 Requests for records
+Requests from patients for copies of their records are passed to the practice manager on the day they are received. Do not send records yourself.
+
+5.5 Mistakes
+If you send information to the wrong person or lose paperwork, tell the practice manager the same day. Do not try to fix it on your own.
+
+6. Payments and estimates
+
+6.1 Taking payment
+Payment is taken at reception at the end of each appointment. We accept card and bank transfer. We do not accept cash.
+
+6.2 Treatment estimates
+Before any course of treatment, the patient receives a written estimate prepared by reception from the dentist's treatment plan. The patient signs a copy, which is scanned to their file.
+
+6.3 Changes to estimates
+If the treatment plan changes, a new estimate is issued before the extra work starts. Reception does not give verbal prices for treatment that is not on the estimate.
+
+6.4 Payment plans
+Payment plans can only be agreed by the practice manager. Reception can explain that payment plans exist but cannot promise one.
+
+6.5 Refunds
+Refunds are approved by the practice manager and paid back to the original card or account.
+
+6.6 Outstanding balances
+Reception checks for outstanding balances when a patient checks in. Mention any balance politely and in private, never in front of other patients. Balances older than 60 days are passed to the practice manager, who decides on next steps.
+
+7. Time off and shift swaps
+
+7.1 Requesting leave
+Holiday requests are made through the leave form on the staff intranet at least four weeks in advance. Requests are approved in the order they are received.
+
+7.2 Sickness
+If you are unwell and cannot work, tell the on-call manager via the staff chat before 7:00 on the day, or as soon as you can. Fill in the return-to-work form on your first day back.
+
+7.3 Shift swaps
+You can swap a shift with a colleague. Shift swaps must be agreed by both staff members and approved by the practice manager at least 48 hours before the shift. Once approved, the practice manager updates the rota on SharePoint.
+
+7.4 Saturday shifts
+Saturday shifts can only be swapped with a colleague in the same role. Each Saturday needs at least one receptionist and two clinical assistants on the rota.
+
+7.5 Overtime
+Overtime must be approved by the practice manager in advance and recorded on your timesheet for that week.
+
+8. Emergencies and incidents
+
+8.1 Medical emergency on site
+In a medical emergency, follow the emergency procedure posted in each surgery and at reception, and call emergency services. The dentist in charge leads the response. Then contact the on-call manager via the staff chat.
+
+8.2 Building incidents
+For a fire alarm, everyone leaves by the nearest exit and meets at the assembly point shown on the evacuation plan. Reception takes the day list so everyone can be accounted for.
+
+8.3 Who to contact
+For any incident outside normal hours, or if the practice manager is not on site, contact the on-call manager via the staff chat. The on-call rota is pinned at the top of the staff chat.
+
+8.4 Recording incidents
+Every incident, accident or near miss is recorded on the incident form on SharePoint within 24 hours, even if no one was hurt. The practice manager reviews all incident forms each week.
+
+9. Supplies and ordering
+
+9.1 Stock checks
+Clinical assistants check surgery stock every Monday and record low items on the stock sheet in the store room. Reception checks office supplies at the same time.
+
+9.2 Placing orders
+Orders are placed by the practice manager every Tuesday from the stock sheet. Staff do not order directly from suppliers.
+
+9.3 Urgent orders
+If an item runs out before the Tuesday order, tell the practice manager. Urgent orders over $250.00 need the practice manager's approval before they are placed.
+
+9.4 Deliveries
+Reception signs for deliveries and checks the number of boxes against the delivery note. Clinical assistants unpack clinical stock and rotate it so older stock is used first.
+
+9.5 Returns
+Damaged or incorrect items are reported to the practice manager the same day, with a photo of the item and the delivery note.
+
+End of handbook.

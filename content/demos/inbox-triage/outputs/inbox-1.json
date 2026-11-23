@@ -1,0 +1,127 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Inbox summary",
+      "items": [
+        { "label": "Messages", "value": "10", "status": "none" },
+        { "label": "High priority", "value": "3", "status": "warn" },
+        { "label": "Normal", "value": "5", "status": "none" },
+        { "label": "Low", "value": "2", "status": "none" },
+        { "label": "Needs a partner", "value": "3", "status": "warn" }
+      ]
+    },
+    {
+      "type": "message",
+      "from": "Gareth Lindqvist <gareth.lindqvist@example.com>",
+      "subject": "Still waiting for a reply - third email",
+      "received": "Thu 12 Nov 2026, 07:58",
+      "priority": "high",
+      "topic": "Complaint",
+      "summary": "Third email about his amended return, first sent on 2 November with no reply. He says he will look for another firm if he does not hear back this week. Needs a partner.",
+      "draft": "Dear Gareth,\n\nThank you for your patience, and I am sorry you have had to write three times. That is not the service we aim for.\n\nI am passing your message to [partner name] today. We will update you on where your amended return stands by [confirm date].\n\nKind regards,\nNadia\nKestwell Accounting"
+    },
+    {
+      "type": "message",
+      "from": "Mailbox Security Team <mailbox-security@example.com>",
+      "subject": "URGENT: Your mailbox will be suspended in 2 hours",
+      "received": "Thu 12 Nov 2026, 09:21",
+      "priority": "high",
+      "topic": "Security",
+      "summary": "Likely phishing. It asks you to click a link and enter your email password within 2 hours, uses a generic greeting and threatens deletion. The sender is not a known Kestwell contact.",
+      "draft": "Do not reply. Do not click the link or enter your password. Report this email to IT and delete it once IT confirms."
+    },
+    {
+      "type": "message",
+      "from": "Lena Farrow <lena.farrow@example.com>",
+      "subject": "Invoice 2026-1187 - amount does not match our agreement",
+      "received": "Tue 10 Nov 2026, 09:03",
+      "priority": "high",
+      "topic": "Billing",
+      "summary": "Disputes invoice 2026-1187 for $2,450.00. She says the engagement letter states $1,950.00 and asks what the extra $500.00 covers or for a corrected invoice. Needs a partner.",
+      "draft": "Dear Lena,\n\nThank you for flagging this. I am checking invoice 2026-1187 against your engagement letter with [partner name] and will come back to you with an explanation or a corrected invoice by [confirm date].\n\nThere is no need to pay this invoice until we have replied.\n\nKind regards,\nNadia\nKestwell Accounting"
+    },
+    {
+      "type": "message",
+      "from": "Dana Whitlock <dana.whitlock@example.com>",
+      "subject": "Quarterly filing deadline - are we on track?",
+      "received": "Mon 9 Nov 2026, 08:42",
+      "priority": "normal",
+      "topic": "Deadlines",
+      "summary": "Asks when the next quarterly sales tax filing for Whitlock Garden Supply is due and whether Kestwell has everything it needs. Wants earlier reminders than last quarter.",
+      "draft": "Hi Dana,\n\nThanks for checking in. The next quarterly sales tax filing for Whitlock Garden Supply is due on [confirm date]. We [have everything we need / still need: list items].\n\nI have noted that you would like an earlier reminder, and I will send one by [confirm date].\n\nBest,\nNadia\nKestwell Accounting"
+    },
+    {
+      "type": "message",
+      "from": "Priya Halden <priya.halden@example.com>",
+      "subject": "Bank statements and receipts for October",
+      "received": "Mon 9 Nov 2026, 10:15",
+      "priority": "normal",
+      "topic": "Documents",
+      "summary": "Sends October bank statements for two accounts and scanned receipts for Halden Design Co. Asks to be told if anything is missing or unreadable.",
+      "draft": "Hi Priya,\n\nThank you, we have received the October bank statements and receipts for Halden Design Co. We will review them and let you know if anything is missing or hard to read.\n\nBest regards,\nNadia\nKestwell Accounting"
+    },
+    {
+      "type": "message",
+      "from": "Marcus Obi <marcus.obi@example.com>",
+      "subject": "Payroll question - new part-time hire",
+      "received": "Mon 9 Nov 2026, 13:27",
+      "priority": "normal",
+      "topic": "Payroll",
+      "summary": "New part-time baker starts on the 23rd. Asks what Kestwell needs before the next payroll run and whether she joins the same pay schedule.",
+      "draft": "Hi Marcus,\n\nThanks for letting us know about your new hire. To set her up for the next payroll run we will need [confirm list of new-hire details and forms]. Please send these by [confirm date].\n\nOn the pay schedule: [confirm whether she joins the existing schedule].\n\nBest,\nNadia\nKestwell Accounting"
+    },
+    {
+      "type": "message",
+      "from": "Owen Brask <owen.brask@example.com>",
+      "subject": "Meeting to review next year's budget",
+      "received": "Wed 11 Nov 2026, 08:55",
+      "priority": "normal",
+      "topic": "Scheduling",
+      "summary": "Asks for a one-hour video call with Nadia and Ruth to review next year's budget for Brask Joinery. Any morning in the week of 23 November. Needs a partner (Ruth's diary).",
+      "draft": "Hi Owen,\n\nThanks, we would be glad to go through next year's budget with you. Would [confirm day and time] in the week of 23 November work? I will send a video call invitation once you confirm.\n\nRegards,\nNadia\nKestwell Accounting"
+    },
+    {
+      "type": "message",
+      "from": "Ben Ostrander <ben.ostrander@example.com>",
+      "subject": "Which engagement letter template?",
+      "received": "Wed 11 Nov 2026, 12:40",
+      "priority": "normal",
+      "topic": "Internal",
+      "summary": "Colleague asks whether to use the standard engagement letter template or the updated version Ruth circulated in October for a new bookkeeping client.",
+      "draft": "Hi Ben,\n\nGood question. [Confirm with Ruth which template is current] and I will let you know. Please hold off sending the letter until then.\n\nNadia"
+    },
+    {
+      "type": "message",
+      "from": "Penmoor Software Sales <renewals@example.com>",
+      "subject": "Your document scanning subscription renews on 15 December",
+      "received": "Tue 10 Nov 2026, 11:30",
+      "priority": "low",
+      "topic": "Vendors",
+      "summary": "Reminder that the DocScan subscription for 5 users renews automatically on 15 December 2026. Changes or cancellation must be requested before 1 December 2026.",
+      "draft": "No reply needed if we keep the subscription as is. If we want to change the number of users, reply before 1 December 2026: \"Please change our DocScan subscription to [number] users from the next renewal. Thank you, Kestwell Accounting\""
+    },
+    {
+      "type": "message",
+      "from": "The Ledger Weekly <newsletter@example.com>",
+      "subject": "This week: 5 year-end tips and our winter webinar series",
+      "received": "Tue 10 Nov 2026, 16:00",
+      "priority": "low",
+      "topic": "Newsletter",
+      "summary": "Marketing newsletter with year-end tips and a webinar sign-up. No action needed.",
+      "draft": "No reply needed."
+    },
+    {
+      "type": "checks",
+      "title": "Before anything is sent",
+      "items": [
+        { "status": "warn", "text": "Suspected phishing from mailbox-security@example.com. Do not click the link. Report to IT." },
+        { "status": "warn", "text": "Gareth Lindqvist complaint: a partner should reply today. The amended return status is not in the email." },
+        { "status": "warn", "text": "Invoice 2026-1187: check the $500.00 difference against the engagement letter before replying." },
+        { "status": "warn", "text": "Several drafts contain placeholders such as [confirm date]. Fill these in before sending." },
+        { "status": "warn", "text": "DocScan renewal: decide on user numbers before 1 December 2026." },
+        { "status": "ok", "text": "Drafts saved to Outlook only. Nothing was sent automatically." }
+      ]
+    }
+  ]
+}

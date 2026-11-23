@@ -1,0 +1,20 @@
+Quillmere Cleaning Supplies
+Fictional supplier for demonstration only
+INVOICE QCS-0913
+
+Invoice date: 2026-10-14
+Payment due: 2026-10-10
+Terms: Net 30
+Customer: Tessaro Distribution (account TD-3317)
+Customer reference: (none)
+
+Qty  Item                                   Each      Line
+  8  FC-5G Floor cleaner concentrate 5 gal  42.00   336.00
+ 20  NG-L100 Nitrile gloves L (box of 100)  11.50   230.00
+ 15  PT-12C Paper towel rolls (case of 12)  27.90   418.50
+
+Subtotal                  984.50
+Sales tax 7.25%            71.38
+Amount due (USD)        1,055.88
+
+Send remittance details to accounts.quillmere@example.com

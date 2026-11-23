@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Invoice header",
+      "items": [
+        { "label": "Supplier", "value": "Brindlecove Packaging Co. (BPC-0042)", "status": "none" },
+        { "label": "Invoice no.", "value": "INV-20418", "status": "none" },
+        { "label": "Invoice date", "value": "2026-10-12", "status": "none" },
+        { "label": "Due date", "value": "2026-11-11", "status": "ok" },
+        { "label": "PO number", "value": "PO-7731", "status": "ok" },
+        { "label": "Terms", "value": "Net 30", "status": "none" },
+        { "label": "Currency", "value": "USD", "status": "none" }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Line items",
+      "columns": [
+        { "label": "SKU", "align": "left" },
+        { "label": "Description", "align": "left" },
+        { "label": "Qty", "align": "right" },
+        { "label": "Unit price", "align": "right" },
+        { "label": "Line total", "align": "right" },
+        { "label": "PO-7731", "align": "left" }
+      ],
+      "rows": [
+        { "cells": ["BX-1218", "Corrugated box 12x12x18", "500", "$1.42", "$710.00", "Match"], "status": "ok", "note": "" },
+        { "cells": ["TP-48C", "Packing tape 48mm clear", "144", "$2.15", "$309.60", "Match"], "status": "ok", "note": "" },
+        { "cells": ["SW-18", "Stretch wrap 18in roll", "40", "$18.75", "$750.00", "Match"], "status": "ok", "note": "" }
+      ],
+      "footer": [
+        { "label": "Subtotal (invoice)", "value": "$1,769.60", "status": "none" },
+        { "label": "Subtotal (recalculated)", "value": "$1,769.60", "status": "ok" },
+        { "label": "Freight", "value": "$0.00", "status": "none" },
+        { "label": "Sales tax", "value": "$0.00", "status": "none" },
+        { "label": "Total due", "value": "$1,769.60", "status": "ok" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "ok", "text": "All 3 lines match PO-7731 on SKU, quantity and unit price." },
+        { "status": "ok", "text": "Line totals and subtotal recalculate correctly." },
+        { "status": "ok", "text": "Due date is 30 days after the invoice date, consistent with Net 30." },
+        { "status": "ok", "text": "No sales tax charged. Matches the resale note on the invoice." }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Ready to post. No differences against the purchase order."
+    }
+  ]
+}

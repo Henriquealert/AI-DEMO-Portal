@@ -1,0 +1,248 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Week at a glance",
+      "items": [
+        {
+          "label": "Jobs completed",
+          "value": "57 (+10 vs 4-week avg 47.00)",
+          "status": "none"
+        },
+        {
+          "label": "Revenue",
+          "value": "$28,475.00 (+22.7% vs $23,210.00)",
+          "status": "ok"
+        },
+        {
+          "label": "Avg revenue per job",
+          "value": "$499.56 (4-week avg $493.83)",
+          "status": "none"
+        },
+        {
+          "label": "First-time fix rate",
+          "value": "78.9% (45 of 57; 4-week avg 87.8%)",
+          "status": "warn"
+        },
+        {
+          "label": "Callbacks",
+          "value": "7 (4-week avg 3.00)",
+          "status": "warn"
+        },
+        {
+          "label": "Avg rating",
+          "value": "4.3 from 46 rated jobs (4-week avg 4.5)",
+          "status": "warn"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "HVAC demand jumped this week. The team completed 57 jobs, 10 more than the 4-week average of 47.00, and revenue rose to $28,475.00, 22.7% above the average of $23,210.00. Almost all of the extra work was HVAC: 28 jobs against an average of 15.50 (23 of them repairs) and $16,880.00 in revenue against $8,120.00. Plumbing (17 jobs) and Electrical (12 jobs) were close to normal. Thursday was the busiest day with 12 jobs, and Saturday still had 7.\n\nQuality slipped as volume rose. Callbacks went from a 4-week average of 3.00 to 7, and 6 of them were HVAC, which is 21.4% of HVAC jobs. The first-time fix rate fell to 78.9% from an average of 87.8%. HVAC fixed 19 of 28 jobs first time (67.9%), while Plumbing and Electrical together fixed 26 of 29 (89.7%). The average rating dropped to 4.3 from 4.5.\n\nWhat to look at: the HVAC callbacks, starting with Owen B. (3 callbacks on 11 jobs) and Dana R. (2 callbacks on 10 jobs). Check whether repeat visits came from parts not on the van or from rushed first visits, and whether HVAC needs extra cover next week if demand stays high. Also fix the export: one job appears twice and 11 jobs have no rating, including 6 of 12 Electrical jobs."
+    },
+    {
+      "type": "chart",
+      "title": "Revenue by service line",
+      "kind": "bar",
+      "unit": "$",
+      "points": [
+        {
+          "label": "Plumbing",
+          "value": 7360
+        },
+        {
+          "label": "HVAC",
+          "value": 16880
+        },
+        {
+          "label": "Electrical",
+          "value": 4235
+        }
+      ],
+      "note": "Total $28,475.00."
+    },
+    {
+      "type": "chart",
+      "title": "Jobs completed per day",
+      "kind": "bar",
+      "unit": "jobs",
+      "points": [
+        {
+          "label": "Mon 10/19",
+          "value": 8
+        },
+        {
+          "label": "Tue 10/20",
+          "value": 9
+        },
+        {
+          "label": "Wed 10/21",
+          "value": 11
+        },
+        {
+          "label": "Thu 10/22",
+          "value": 12
+        },
+        {
+          "label": "Fri 10/23",
+          "value": 10
+        },
+        {
+          "label": "Sat 10/24",
+          "value": 7
+        }
+      ],
+      "note": "2026-10-19 to 2026-10-24."
+    },
+    {
+      "type": "chart",
+      "title": "First-time fix rate by technician",
+      "kind": "bar",
+      "unit": "%",
+      "points": [
+        {
+          "label": "Dana R.",
+          "value": 70
+        },
+        {
+          "label": "Grace T.",
+          "value": 80
+        },
+        {
+          "label": "Luis K.",
+          "value": 71.4
+        },
+        {
+          "label": "Marco D.",
+          "value": 100
+        },
+        {
+          "label": "Owen B.",
+          "value": 63.6
+        },
+        {
+          "label": "Priya S.",
+          "value": 75
+        },
+        {
+          "label": "Sam P.",
+          "value": 100
+        },
+        {
+          "label": "Tom W.",
+          "value": 100
+        }
+      ],
+      "note": "Share of each technician's jobs fixed on the first visit. Small job counts swing this a lot."
+    },
+    {
+      "type": "table",
+      "title": "By service line",
+      "columns": [
+        {
+          "label": "Service line",
+          "align": "left"
+        },
+        {
+          "label": "Jobs",
+          "align": "right"
+        },
+        {
+          "label": "Revenue",
+          "align": "right"
+        },
+        {
+          "label": "Callbacks",
+          "align": "right"
+        },
+        {
+          "label": "Avg rating",
+          "align": "right"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Plumbing",
+            "17",
+            "$7,360.00",
+            "1",
+            "4.6"
+          ],
+          "status": "none",
+          "note": ""
+        },
+        {
+          "cells": [
+            "HVAC",
+            "28",
+            "$16,880.00",
+            "6",
+            "4.2"
+          ],
+          "status": "warn",
+          "note": "6 callbacks on 28 jobs (21.4%); 4-week avg 1.00."
+        },
+        {
+          "cells": [
+            "Electrical",
+            "12",
+            "$4,235.00",
+            "0",
+            "4.5"
+          ],
+          "status": "none",
+          "note": ""
+        }
+      ],
+      "footer": [
+        {
+          "label": "Total jobs",
+          "value": "57",
+          "status": "none"
+        },
+        {
+          "label": "Total revenue",
+          "value": "$28,475.00",
+          "status": "none"
+        },
+        {
+          "label": "Total callbacks",
+          "value": "7",
+          "status": "none"
+        },
+        {
+          "label": "Avg rating",
+          "value": "4.3",
+          "status": "none"
+        }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Data checks",
+      "items": [
+        {
+          "status": "warn",
+          "text": "11 jobs have no customer rating (HH-41251, HH-41253, HH-41254, HH-41259, HH-41264, HH-41277, HH-41279, HH-41282, HH-41291, HH-41300, HH-41301). Avg rating uses the 46 rated jobs only."
+        },
+        {
+          "status": "warn",
+          "text": "Job HH-41281 appears twice (lines 32 and 33 of the file) with identical values. Counted once."
+        },
+        {
+          "status": "ok",
+          "text": "All 57 counted rows dated 2026-10-19 to 2026-10-24, with a service line, technician and revenue."
+        },
+        {
+          "status": "ok",
+          "text": "Figures computed from 57 rows (58 in the file, 1 duplicate removed)."
+        },
+        {
+          "status": "none",
+          "text": "Comparisons use the 4-week average for Sep 14 to Oct 10 from the reference data."
+        }
+      ]
+    }
+  ]
+}

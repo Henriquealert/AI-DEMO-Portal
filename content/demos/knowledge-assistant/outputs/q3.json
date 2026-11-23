@@ -1,0 +1,28 @@
+{
+  "blocks": [
+    {
+      "type": "answer",
+      "question": "Can I swap my Saturday shift with a colleague?",
+      "answer": "Yes, as long as the colleague works in the same role as you. You both need to agree the swap, and the practice manager must approve it at least 48 hours before the shift. The practice manager then updates the rota on SharePoint.",
+      "citations": [
+        {
+          "section": "7.3",
+          "title": "Shift swaps",
+          "quote": "Shift swaps must be agreed by both staff members and approved by the practice manager at least 48 hours before the shift."
+        },
+        {
+          "section": "7.4",
+          "title": "Saturday shifts",
+          "quote": "Saturday shifts can only be swapped with a colleague in the same role."
+        }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "ok", "text": "Answer based on sections 7.3 and 7.4 only." }
+      ]
+    }
+  ]
+}

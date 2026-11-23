@@ -1,0 +1,86 @@
+/*
+ * Alert Brand Guidelines 2026: colour tokens.
+ *
+ * TODO(brand): replace the four hex values below with the exact values from
+ * the 2026 guidelines. The current values are neutral stand-ins, NOT brand
+ * colours. After replacing them, run `npm run check:contrast`.
+ *
+ * Every other colour on the site is derived from these four. Do not add more.
+ */
+:root {
+  --deep-ink: #0e1014; /* TODO(brand): Deep Ink hex */
+  --soft-ivory: #f4f1ea; /* TODO(brand): Soft Ivory hex */
+  --electric-blue: #3b6cff; /* TODO(brand): Electric Blue hex */
+  --acid-lime: #c8f03c; /* TODO(brand): Acid Lime hex */
+}
+
+/* ---------- Semantic tokens: dark mode (default) ---------- */
+:root {
+  color-scheme: dark;
+  --bg: var(--deep-ink);
+  --fg: var(--soft-ivory);
+
+  /* Derived from the foreground at reduced opacity. */
+  --fg-muted: color-mix(in srgb, var(--fg) 68%, transparent);
+  --fg-faint: color-mix(in srgb, var(--fg) 56%, transparent);
+  --line: color-mix(in srgb, var(--fg) 22%, transparent);
+  --line-strong: color-mix(in srgb, var(--fg) 45%, transparent);
+  --surface-hover: color-mix(in srgb, var(--fg) 6%, transparent);
+  --surface-sunken: color-mix(in srgb, var(--fg) 4%, transparent);
+
+  /*
+   * Accent roles. Blue marks links (underline), primary buttons (fill), focus
+   * rings and active filters. Text itself stays ink or ivory, so small text
+   * always passes AA whatever the final blue is.
+   */
+  --accent: var(--electric-blue);
+  /*
+   * Label colour on a solid blue button. Primary button labels are large bold
+   * text (19px bold), so they need 3:1. `npm run check:contrast` reports which
+   * of ink or ivory reads better on the final blue: set it here.
+   */
+  --on-accent: var(--deep-ink); /* TODO(brand): confirm after check:contrast */
+
+  /* Acid Lime: status tags only. Always a solid fill with ink text, never text colour. */
+  --tag-fill: var(--acid-lime);
+  --on-tag: var(--deep-ink);
+}
+
+/* ---------- Light mode ---------- */
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --bg: var(--soft-ivory);
+    --fg: var(--deep-ink);
+    --fg-muted: color-mix(in srgb, var(--fg) 72%, transparent);
+    --fg-faint: color-mix(in srgb, var(--fg) 64%, transparent);
+    --line: color-mix(in srgb, var(--fg) 20%, transparent);
+    --line-strong: color-mix(in srgb, var(--fg) 45%, transparent);
+  }
+}
+
+/* ---------- Type ---------- */
+:root {
+  /* Helvetica only, never stretched or condensed. */
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --text-xs: 0.6875rem; /* 11px labels */
+  --text-sm: 0.8125rem; /* 13px */
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  --text-2xl: clamp(2.25rem, 1.4rem + 4vw, 4.5rem);
+
+  --label-tracking: 0.12em;
+  --head-tracking: -0.025em;
+  --measure: 70ch;
+
+  --gutter: 16px;
+  --page-max: 1280px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+  }
+}

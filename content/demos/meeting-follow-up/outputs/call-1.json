@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "type": "text",
+      "text": "Discovery call with Brightfold Home Goods on Aug 20, 2026. Brightfold ships about 420 pallets a month from the north warehouse, rising to around 600 in October and November, mostly carried by Tarrow Freight Lines with a broker for peak overflow. The main pain is missed morning pickups on the Site B lane (three in July) with no ETA visibility.\n\nBoth sides agreed in principle on a six-week pilot on the north warehouse to Site B lane, starting the week of Sep 14 and running to Oct 23, measured on on-time pickup and ETA visibility. Next step is a rate proposal based on three months of Brightfold shipment data, reviewed at a follow-up on Sep 1."
+    },
+    {
+      "type": "list",
+      "title": "Action items",
+      "ordered": false,
+      "items": [
+        { "text": "Send three months of shipment history as CSV (pallets per day, pickup times, weights if available).", "owner": "Lena Voss (Brightfold)", "due": "Aug 24, 2026" },
+        { "text": "Confirm Site B Saturday receiving hours in peak and brief the Site B manager on the new carrier.", "owner": "Lena Voss (Brightfold)", "due": "This week (said on Aug 20, 2026)" },
+        { "text": "Check with compliance whether the aerosol cleaning sprays are classed as hazmat or limited quantity.", "owner": "Lena Voss (Brightfold)", "due": "Not set" },
+        { "text": "Confirm the spend threshold that needs CFO sign-off.", "owner": "Owen Pratley (Brightfold)", "due": "Not set" },
+        { "text": "Send lane-by-lane rate proposal: Site B pilot pricing plus indicative rates for the east DC and south cross-dock.", "owner": "Sam Ruddock (Marrowbay)", "due": "Aug 28, 2026" },
+        { "text": "Check driver availability for a 3 to 5 pm late pickup window on the Site B lane.", "owner": "Sam Ruddock (Marrowbay)", "due": "Not set" },
+        { "text": "Send pilot terms, on-time pickup measurement and insurance certificate for vendor setup.", "owner": "Tessa Harlow (Marrowbay)", "due": "Not set" },
+        { "text": "Send calendar invite for the proposal review.", "owner": "Tessa Harlow (Marrowbay)", "due": "Before Sep 1, 2026" }
+      ]
+    },
+    {
+      "type": "email",
+      "title": "Follow-up email (draft)",
+      "to": "Owen Pratley; Lena Voss",
+      "subject": "Next steps: Site B pilot and rate proposal",
+      "body": "Hi Owen, hi Lena,\n\nThanks for the time today. Here is what we agreed.\n\nPilot\n- Lane: north warehouse to Site B only.\n- Dates: week of Sep 14 to Oct 23, 2026 (six weeks), before the October volume increase.\n- Measures: on-time pickup and ETA visibility, with two-hour pickup windows and alerts before a window is missed.\n\nNext steps\n- Lena: three months of shipment history as CSV by Aug 24. Also checking Site B Saturday hours and whether the aerosol sprays count as hazmat.\n- Owen: confirm the threshold for CFO sign-off.\n- Sam: lane-by-lane rate proposal by Aug 28, with pilot pricing for Site B and indicative rates for the east DC and south cross-dock. Sam is also checking an afternoon 3 to 5 pm pickup option.\n- Tessa: pilot terms and our insurance certificate for your procurement team.\n\nWe will go through the proposal together on Tuesday, Sep 1 at 10. I will send the invite.\n\nBest regards,\nTessa Harlow\nAccount Manager, Marrowbay Logistics"
+    },
+    {
+      "type": "fields",
+      "title": "CRM fields",
+      "items": [
+        { "label": "Account", "value": "Brightfold Home Goods", "status": "none" },
+        { "label": "Contact", "value": "Owen Pratley, Director of Distribution (also: Lena Voss, Transport Coordinator)", "status": "none" },
+        { "label": "Stage", "value": "Develop: pilot agreed in principle, proposal due", "status": "none" },
+        { "label": "Est. monthly volume", "value": "About 420 pallets (about 600 in Oct and Nov). Pilot lane: about 260 pallets", "status": "ok" },
+        { "label": "Next step", "value": "Rate proposal by Aug 28, 2026", "status": "none" },
+        { "label": "Next meeting", "value": "Tue, Sep 1, 2026, 10:00", "status": "ok" },
+        { "label": "Competitors mentioned", "value": "Tarrow Freight Lines (incumbent); unnamed broker for peak overflow", "status": "none" },
+        { "label": "Risks", "value": "CFO sign-off needed if expanded to all lanes; possible hazmat aerosols; afternoon pickup not yet confirmed", "status": "warn" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Needs confirmation",
+      "items": [
+        { "status": "warn", "text": "South cross-dock volume not given. Sam estimated about 50 pallets a month by subtraction; Lena said it varies from almost nothing to double." },
+        { "status": "warn", "text": "Hazmat status of the aerosol cleaning sprays is unknown. It affects labeling and trailer choice for the pilot." },
+        { "status": "warn", "text": "CFO approval threshold not known. Owen can approve the pilot but not a three-lane contract." },
+        { "status": "warn", "text": "Late 3 to 5 pm pickup was requested but not committed. Driver availability still to be checked." },
+        { "status": "warn", "text": "No due dates were set for the pilot terms, insurance certificate, CFO threshold or hazmat check." },
+        { "status": "ok", "text": "Pilot start, end date and next meeting time were confirmed by both sides." }
+      ]
+    }
+  ]
+}

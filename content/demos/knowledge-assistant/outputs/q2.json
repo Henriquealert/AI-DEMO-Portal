@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "type": "answer",
+      "question": "Who signs off the autoclave log at the end of the day?",
+      "answer": "The last clinical assistant on shift signs off the autoclave log at the end of the day. The lead dental nurse then reviews the log every Friday and initials the weekly summary.",
+      "citations": [
+        {
+          "section": "4.3",
+          "title": "End-of-day sign-off",
+          "quote": "The last clinical assistant on shift signs off the autoclave log at the end of the day."
+        }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "ok", "text": "Answer based on section 4.3 only." }
+      ]
+    }
+  ]
+}

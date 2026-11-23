@@ -1,0 +1,58 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Invoice header",
+      "items": [
+        { "label": "Supplier", "value": "Northvale Fastener Supply (NFS-118)", "status": "none" },
+        { "label": "Invoice no.", "value": "NFS-5520", "status": "none" },
+        { "label": "Invoice date", "value": "2026-10-15", "status": "none" },
+        { "label": "Due date", "value": "2026-11-14", "status": "ok" },
+        { "label": "PO number", "value": "PO-7745", "status": "ok" },
+        { "label": "Terms", "value": "Net 30", "status": "none" },
+        { "label": "Currency", "value": "USD", "status": "none" }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Line items",
+      "columns": [
+        { "label": "SKU", "align": "left" },
+        { "label": "Description", "align": "left" },
+        { "label": "Qty", "align": "right" },
+        { "label": "Unit price", "align": "right" },
+        { "label": "Line total", "align": "right" },
+        { "label": "PO-7745", "align": "left" }
+      ],
+      "rows": [
+        { "cells": ["HX-516", "Hex bolt 5/16 x 2 (box of 100)", "60", "$9.80", "$588.00", "Match"], "status": "ok", "note": "" },
+        { "cells": ["NW-516", "Nylon lock nut 5/16 (box of 100)", "60", "$6.95", "$417.00", "Price differs"], "status": "error", "note": "PO price is $6.40. Billed $0.55 more per box, $33.00 over on this line." },
+        { "cells": ["FW-516", "Flat washer 5/16 (box of 100)", "40", "$3.25", "$130.00", "Match"], "status": "ok", "note": "" },
+        { "cells": ["LS-38", "Lag screw 3/8 x 3 (box of 50)", "30", "$14.60", "$438.00", "Qty differs"], "status": "error", "note": "PO quantity is 25. Billed for 5 extra boxes, $73.00 over on this line. Check the delivery note." }
+      ],
+      "footer": [
+        { "label": "Subtotal (invoice)", "value": "$1,578.00", "status": "error" },
+        { "label": "Subtotal (recalculated)", "value": "$1,573.00", "status": "none" },
+        { "label": "Freight", "value": "$42.50", "status": "warn" },
+        { "label": "Total (invoice)", "value": "$1,620.50", "status": "error" },
+        { "label": "Total at PO prices and quantities", "value": "$1,467.00 + freight", "status": "none" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "error", "text": "Subtotal is printed as $1,578.00 but the lines add up to $1,573.00. Difference: $5.00." },
+        { "status": "error", "text": "NW-516 unit price $6.95 does not match PO-7745 ($6.40)." },
+        { "status": "error", "text": "LS-38 quantity 30 does not match PO-7745 (25)." },
+        { "status": "warn", "text": "Freight of $42.50 is not on the purchase order. Confirm it was agreed." },
+        { "status": "ok", "text": "HX-516 and FW-516 match the purchase order." },
+        { "status": "ok", "text": "Due date is consistent with Net 30." }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Hold for review. Three differences against PO-7745 and one arithmetic error. Suggested action: ask Northvale for a corrected invoice and confirm the LS-38 quantity against the delivery note."
+    }
+  ]
+}

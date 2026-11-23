@@ -1,0 +1,24 @@
+From: Dana Morrow <dana.morrow@example.com>
+To: vantrell.sales@example.com
+Date: Nov 16, 2026
+Subject: Quote request - control panel enclosures, Line 3 build
+
+Hi Vantrell team,
+
+We are building out the control panels for our Line 3 expansion and need pricing on the following:
+
+- 40 x VM-ENC-1612 wall-mount enclosures (16 x 12 x 8)
+- 40 x matching back panels for the 16 x 12 boxes
+- 40 pairs of wall-mount bracket kits
+- 150 x 4 x 4 L-brackets, zinc plated (VM-BRK-L4)
+- 80 x quarter-turn door latch kits
+
+Delivery to our main plant dock. We would like everything in one shipment if possible, ideally before mid-December.
+
+Please send a quote with your standard terms.
+
+Thanks,
+Dana Morrow
+Purchasing Lead
+Halberd Controls
+dana.morrow@example.com

@@ -1,0 +1,23 @@
+NORTHVALE FASTENER SUPPLY
+Fictional supplier for demonstration only
+Invoice
+
+From: billing.northvale@example.com   Supplier ID: NFS-118
+To:   Tessaro Distribution, ap.tessaro@example.com
+
+Invoice #  NFS-5520
+Date       2026-10-15
+PO #       PO-7745
+Terms      Net 30, due 2026-11-14
+
+Item     Description                          Qty   Price     Total
+HX-516   Hex bolt 5/16 x 2 (box of 100)        60    9.80    588.00
+NW-516   Nylon lock nut 5/16 (box of 100)      60    6.95    417.00
+FW-516   Flat washer 5/16 (box of 100)         40    3.25    130.00
+LS-38    Lag screw 3/8 x 3 (box of 50)         30   14.60    438.00
+
+Subtotal                                                   1,578.00
+Freight                                                       42.50
+Total (USD)                                                1,620.50
+
+Questions about this invoice: billing.northvale@example.com

@@ -1,0 +1,46 @@
+{
+  "slug": "inbox-triage",
+  "title": "Inbox triage",
+  "description": "Sorts a shared inbox by priority and topic, summarises each email and drafts a reply for review.",
+  "category": "COMMUNICATION",
+  "status": "SAMPLE",
+  "order": 1,
+  "company": { "name": "Kestwell Accounting", "industry": "Accounting" },
+  "spec": {
+    "input": "Emails from a shared or personal inbox",
+    "output": "Priority, topic, summary and draft reply per email",
+    "whereItRuns": "Microsoft 365: Outlook + Power Automate flow",
+    "manualTime": "TODO",
+    "withTool": "TODO"
+  },
+  "problem": "Client services staff open the inbox each morning and read every email to decide what is urgent. Complaints, billing disputes and suspicious emails sit next to newsletters, so important messages can wait days for a reply. Each reply is written from scratch.",
+  "steps": [
+    { "label": "Input", "text": "New emails arrive in the Outlook inbox and are collected in a batch." },
+    { "label": "AI step", "text": "Claude reads each email, sets priority and topic, writes a short summary and drafts a reply." },
+    { "label": "Check", "text": "Suspected phishing, complaints and anything needing a partner are flagged. Drafts use placeholders where a person must confirm details." },
+    { "label": "Output", "text": "Categories and flags land in Outlook and drafts are saved for review. Nothing is sent automatically." }
+  ],
+  "stack": [
+    { "name": "Claude", "role": "Reads each email, sets priority and topic, writes the summary and draft reply." },
+    { "name": "Outlook", "role": "Inbox source. Draft replies are saved here and never sent automatically." },
+    { "name": "Power Automate", "role": "Applies categories and flags to each email in Outlook." },
+    { "name": "Microsoft 365", "role": "Accounts, mailbox permissions and security for the whole flow." }
+  ],
+  "tryIt": {
+    "inputLabel": "Inbox emails",
+    "inputFormat": "text",
+    "placeholder": "Paste one or more emails with From, Date and Subject lines, separated by -----",
+    "maxChars": 15000,
+    "acceptUpload": false
+  },
+  "context": [],
+  "samples": [
+    {
+      "id": "inbox-1",
+      "label": "Monday to Thursday inbox (10 emails)",
+      "input": "samples/inbox-1.txt",
+      "output": "outputs/inbox-1.json"
+    }
+  ],
+  "live": { "enabled": true, "prompt": "prompt.md" }
+}

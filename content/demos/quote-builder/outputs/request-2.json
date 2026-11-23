@@ -1,0 +1,78 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Quote",
+      "items": [
+        { "label": "Quote no.", "value": "VQ-2026-0413 (draft)", "status": "none" },
+        { "label": "Customer", "value": "Corvane Water Systems", "status": "none" },
+        { "label": "Contact", "value": "Luis Fenwick, Maintenance Planner (l.fenwick@example.com)", "status": "none" },
+        { "label": "Date", "value": "Nov 18, 2026", "status": "none" },
+        { "label": "Valid until", "value": "Dec 18, 2026", "status": "none" },
+        { "label": "Payment terms", "value": "Net 30 (sample)", "status": "none" }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Line items",
+      "columns": [
+        { "label": "SKU", "align": "left" },
+        { "label": "Description", "align": "left" },
+        { "label": "Qty", "align": "right" },
+        { "label": "Unit price", "align": "right" },
+        { "label": "Line total", "align": "right" }
+      ],
+      "rows": [
+        {
+          "cells": ["VM-ENC-SS1210", "Wall-mount enclosure 12 x 10 x 6 in, 304 stainless steel", "12", "$312.00", "$3,744.00"],
+          "status": "ok",
+          "note": "Matched from \"stainless enclosures, 12 x 10 x 6\"."
+        },
+        {
+          "cells": ["VM-PNL-1210", "Back panel for 12 x 10 enclosures, galvanized steel", "12", "$18.75", "$225.00"],
+          "status": "ok",
+          "note": "Matched from \"back panels to suit\". Meets minimum of 10."
+        },
+        {
+          "cells": ["VM-ACC-VK", "Louver vent kit with filter, for wall enclosures", "12", "$27.50", "$330.00"],
+          "status": "ok",
+          "note": "Matched from \"louver vent kits\"."
+        },
+        {
+          "cells": ["VM-BRK-Z3", "Z-bracket 3 in offset, 11 ga steel, zinc plated", "200", "$4.50", "$900.00"],
+          "status": "warn",
+          "note": "Customer wrote \"a couple hundred\". Quoted at 200 (100+ price) pending confirmation."
+        },
+        {
+          "cells": ["Not listed", "Stainless rain hood for 12 x 10 enclosures", "12", "Not priced", "Not priced"],
+          "status": "warn",
+          "note": "Not on the price list. Excluded from subtotal."
+        }
+      ],
+      "footer": [
+        { "label": "Subtotal", "value": "$5,199.00", "status": "none" },
+        { "label": "Freight", "value": "To be confirmed", "status": "warn" },
+        { "label": "Total", "value": "$5,199.00 + freight", "status": "none" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "ok", "text": "4 of 5 requested items matched to the price list by description." },
+        { "status": "ok", "text": "Matched quantities meet the minimum order quantity on the price list." },
+        { "status": "warn", "text": "Stainless rain hoods (12) are not on the price list. A person needs to source or quote them, or suggest an alternative." },
+        { "status": "warn", "text": "Z-bracket quantity is ambiguous (\"a couple hundred\"). Quoted at 200 at the 100+ price; confirm the exact count with the customer." },
+        { "status": "warn", "text": "Request mentions washdown. VM-PNL-1210 back panels are galvanized steel, not stainless; confirm this suits the application." },
+        { "status": "warn", "text": "Freight and delivery address not given in the request. Freight is not priced." }
+      ]
+    },
+    {
+      "type": "email",
+      "title": "Cover email (draft)",
+      "to": "l.fenwick@example.com",
+      "subject": "Quote VQ-2026-0413: pump station enclosures",
+      "body": "Hello Luis,\n\nThanks for your request. Attached is quote VQ-2026-0413 for the stainless enclosures, back panels, vent kits and Z-brackets. The subtotal is $5,199.00, before freight.\n\nA few points to confirm before we finalize:\n\n- Z-brackets: we quoted 200 at our 100+ price. Please confirm the exact quantity.\n- Rain hoods: stainless rain hoods are not on our standard price list. We are checking options and will come back to you separately.\n- Back panels: the standard panels for this size are galvanized steel. Let us know if you need a different material for the washdown areas.\n- Freight: please send the delivery address so we can add freight.\n\nThe quote is valid until Dec 18, 2026, on Net 30 terms.\n\nBest regards,\nVantrell Manufacturing Sales"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "comingSoon": true,
+  "slug": "private-ai",
+  "title": "Private AI",
+  "description": "AI that runs inside your own cloud account, so documents and prompts stay under your control.",
+  "category": "PRIVATE AI",
+  "order": 1,
+  "stack": [
+    { "name": "Amazon Bedrock", "role": "Runs the model inside your own cloud account." },
+    { "name": "Claude", "role": "The model behind the assistant." }
+  ]
+}

@@ -1,0 +1,117 @@
+Meeting: Brightfold Home Goods / Marrowbay Logistics - discovery call
+Date: Aug 20, 2026
+Attendees: Tessa Harlow (Account Manager, Marrowbay Logistics), Sam Ruddock (Solutions Engineer, Marrowbay Logistics), Owen Pratley (Director of Distribution, Brightfold Home Goods), Lena Voss (Transport Coordinator, Brightfold Home Goods)
+
+[00:00:12] Tessa Harlow: Thanks for making the time, Owen, Lena. I've got Sam with me from our solutions team. The goal today is to understand your outbound freight and see whether a pilot makes sense. Does that still work for you?
+
+[00:00:24] Owen Pratley: Yes, that works. I'll be upfront: we're not unhappy enough to switch everything tomorrow, but we've had enough problems this summer that we're looking.
+
+[00:00:35] Tessa Harlow: That's fair. Can you walk us through what you ship today?
+
+[00:00:41] Owen Pratley: Sure. Everything goes out of the north warehouse. We ship palletized home goods: storage bins, kitchen racks, some small furniture. Three main lanes. The biggest is the north warehouse to Site B, which is our own retail distribution center. Then two customer lanes: one to a retailer's east DC and one to the south cross-dock.
+
+[00:01:05] Sam Ruddock: And roughly how many pallets a month across those?
+
+[00:01:09] Lena Voss: On average about 420 pallets a month. In October and November it goes up to around 600 because of the holiday build.
+
+[00:01:18] Sam Ruddock: How does that split by lane?
+
+[00:01:21] Lena Voss: Site B is the bulk of it, about 260 pallets a month. The east DC is around 110. The south cross-dock I'd have to check. It moves around a lot, it depends on their promotions.
+
+[00:01:34] Sam Ruddock: Okay. 260 plus 110 is 370, so the cross-dock is roughly the remaining fifty on an average month?
+
+[00:01:41] Lena Voss: Roughly, but don't hold me to that. Some months it's almost nothing, some months it's double.
+
+[00:01:47] Tessa Harlow: That's helpful. Who carries it today?
+
+[00:01:51] Owen Pratley: Tarrow Freight Lines does most of it. We use a broker for overflow in peak season. Tarrow has been fine on price, but pickups have been the problem.
+
+[00:02:03] Tessa Harlow: Tell me more about the pickups.
+
+[00:02:06] Lena Voss: Our dock schedules pickups between 7 and 9 in the morning. Tarrow gives us a window but they miss it. We had three missed pickups in July alone, all on the Site B lane. When that happens, the pallets sit on the dock, the next day's loads stack up behind them, and the store shelves at Site B run short.
+
+[00:02:25] Owen Pratley: And we don't get any warning. We find out when the truck doesn't show. There's no ETA, no tracking, nothing until someone calls.
+
+[00:02:33] Sam Ruddock: Understood. On our side, every pickup gets a two-hour window, and the driver's ETA shows in the shipper portal from the time they're dispatched. If a pickup is going to slip, your team gets an alert before the window opens, not after.
+
+[00:02:47] Lena Voss: That would help. The other thing is we'd like a late pickup option. Some days production finishes after lunch and we'd rather ship the same day.
+
+[00:02:56] Sam Ruddock: What kind of time are you thinking?
+
+[00:02:59] Lena Voss: Something like 3 to 5 in the afternoon, a couple of days a week.
+
+[00:03:04] Sam Ruddock: I'll need to check driver availability for an afternoon window on that lane before I commit to it. I don't want to promise something and then miss it the way you've been missed.
+
+[00:03:13] Owen Pratley: Appreciated.
+
+[00:03:16] Tessa Harlow: What about receiving at Site B? Any restrictions there?
+
+[00:03:20] Lena Voss: Site B receives from 6 in the morning to 2 in the afternoon, Monday to Friday. I think they've talked about extending to Saturdays in peak, but I need to confirm that with the Site B manager.
+
+[00:03:31] Tessa Harlow: Okay. And anything special about the freight itself? Temperature, hazmat, oversized?
+
+[00:03:37] Owen Pratley: Mostly no. Standard pallets, 48 by 40, nothing temperature controlled. We do carry a small line of aerosol cleaning sprays. I honestly don't know if those count as hazmat for shipping. Lena?
+
+[00:03:49] Lena Voss: I'm not sure either. They're a small share of the loads, but I'd want to check with our compliance person.
+
+[00:03:55] Sam Ruddock: Please do. If they're classed as limited quantity there are labeling rules, and it affects which trailers we can use. Better to know before we plan a pilot.
+
+[00:04:05] Tessa Harlow: Let's talk about the pilot. What would you need to see to call it a success?
+
+[00:04:10] Owen Pratley: Honestly, pickups on time. If we go six weeks without a missed pickup on the Site B lane, that's already better than what we have. And visibility. I want Lena to stop spending her mornings on the phone.
+
+[00:04:23] Lena Voss: Yes, please.
+
+[00:04:25] Tessa Harlow: So a pilot on the north warehouse to Site B lane only, six weeks, with on-time pickup and ETA visibility as the measures?
+
+[00:04:33] Owen Pratley: That's how I'd see it. I don't want to touch the customer lanes until we've seen it work on our own freight.
+
+[00:04:40] Sam Ruddock: That makes sense. Timing-wise, if we're running six weeks, you'd want it done before the October volume kicks in.
+
+[00:04:47] Owen Pratley: Exactly. Could we start the week of September 14?
+
+[00:04:52] Tessa Harlow: That works on our side in principle. Six weeks from September 14 takes us to October 23. Sam, any concern with that?
+
+[00:05:00] Sam Ruddock: Not on capacity. I'd want three months of shipment history first so I can plan the trucks and price it properly. Pallets per day, pickup times, weights if you have them.
+
+[00:05:10] Lena Voss: I can pull that from our system. CSV okay?
+
+[00:05:13] Sam Ruddock: CSV is perfect.
+
+[00:05:15] Lena Voss: I can get it to you by Monday, August 24.
+
+[00:05:19] Sam Ruddock: Then I can have a lane-by-lane rate proposal back to you by Friday, August 28. I'll price the Site B lane for the pilot, and give indicative rates for the east DC and cross-dock so you can see the full picture.
+
+[00:05:31] Owen Pratley: Good. One thing on pricing. Anything over a certain amount needs our CFO to sign off. For a pilot I think I can approve it myself, but if this turns into all three lanes, she'll want to see it.
+
+[00:05:43] Tessa Harlow: Understood. What's the threshold where she needs to be involved?
+
+[00:05:47] Owen Pratley: I'd have to check. It changed this year.
+
+[00:05:51] Tessa Harlow: No problem. I'll put together the pilot terms, how we'd measure on-time pickup, and send our insurance certificate, since I assume your team will need that for vendor setup.
+
+[00:06:01] Owen Pratley: Yes, procurement will ask for it.
+
+[00:06:04] Tessa Harlow: And you mentioned the broker for overflow. Would you want us to cover peak overflow later, or keep that separate?
+
+[00:06:10] Owen Pratley: Keep it separate for now. Let's see the pilot first.
+
+[00:06:15] Tessa Harlow: Got it. Is there anyone else who should be involved before the pilot starts?
+
+[00:06:19] Owen Pratley: Procurement, for vendor setup. And the Site B manager, so they know a different carrier is coming. Lena can loop them in.
+
+[00:06:27] Lena Voss: I'll talk to the Site B manager this week, and ask about the Saturday hours while I'm at it.
+
+[00:06:32] Tessa Harlow: Great. Let's set a follow-up to go through Sam's proposal. How about Tuesday, September 1, at 10?
+
+[00:06:39] Owen Pratley: Tuesday September 1 at 10 works for me.
+
+[00:06:42] Lena Voss: Same.
+
+[00:06:44] Tessa Harlow: I'll send the invite. To recap: Lena sends three months of shipment data by August 24 and checks Site B's Saturday hours and the aerosol question. Sam sends the rate proposal by August 28. I send pilot terms and the insurance certificate, and the invite for September 1. Owen checks the CFO approval threshold. Anything I missed?
+
+[00:07:05] Owen Pratley: No, that's it. Thanks, both.
+
+[00:07:08] Sam Ruddock: Thanks, talk soon.
+
+[00:07:10] Tessa Harlow: Thanks, everyone.

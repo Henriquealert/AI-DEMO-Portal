@@ -1,0 +1,51 @@
+{
+  "blocks": [
+    {
+      "type": "text",
+      "text": "Renewal check-in with Quillon Supply Co. on Oct 6, 2026, ahead of the Dec 31 contract renewal. Rosa reports about 96 percent on-time pickups this year and a preference to stay if terms are reasonable. Open issues are two disputed September detention charges at the west yard and a request for Saturday pickups if a planned February Saturday shift goes ahead.\n\nVolume is about 300 pallets a month and expected to grow about 15 percent next year to roughly 345. Procurement has a second quote from Bellwick Logistics and wants to decide by the end of November."
+    },
+    {
+      "type": "list",
+      "title": "Action items",
+      "ordered": false,
+      "items": [
+        { "text": "Email the two disputed detention invoice numbers and the dock logs.", "owner": "Rosa Feld (Quillon)", "due": "Not set" },
+        { "text": "Send the disputed detention charges to billing for review.", "owner": "Tessa Harlow (Marrowbay)", "due": "On receipt of invoice numbers" },
+        { "text": "Check Saturday pickup coverage at the main warehouse.", "owner": "Tessa Harlow (Marrowbay)", "due": "Before Oct 30, 2026" },
+        { "text": "Send renewal terms covering the higher volume and the Saturday option.", "owner": "Tessa Harlow (Marrowbay)", "due": "Oct 30, 2026" },
+        { "text": "Send calendar invite for the renewal review.", "owner": "Tessa Harlow (Marrowbay)", "due": "Before Nov 5, 2026" }
+      ]
+    },
+    {
+      "type": "email",
+      "title": "Follow-up email (draft)",
+      "to": "Rosa Feld",
+      "subject": "Renewal next steps and Nov 5 review",
+      "body": "Hi Rosa,\n\nThanks for the update today, and for the feedback on pickups.\n\nNext steps\n- Detention charges: when you send the two invoice numbers and the dock logs, I will pass them to billing for review.\n- Saturday pickups: I am checking Saturday coverage at the main warehouse so it can be included as an option.\n- Renewal terms: I will send our proposal by Oct 30, based on about 345 pallets a month and the Saturday option.\n\nWe will review the proposal together on Thursday, Nov 5 at 2 pm. I will send the invite.\n\nBest regards,\nTessa Harlow\nAccount Manager, Marrowbay Logistics"
+    },
+    {
+      "type": "fields",
+      "title": "CRM fields",
+      "items": [
+        { "label": "Account", "value": "Quillon Supply Co.", "status": "none" },
+        { "label": "Contact", "value": "Rosa Feld, Logistics Manager", "status": "none" },
+        { "label": "Stage", "value": "Renewal: proposal due Oct 30", "status": "none" },
+        { "label": "Est. monthly volume", "value": "About 300 pallets now; about 345 expected next year", "status": "ok" },
+        { "label": "Next step", "value": "Renewal terms by Oct 30, 2026", "status": "none" },
+        { "label": "Next meeting", "value": "Thu, Nov 5, 2026, 14:00", "status": "ok" },
+        { "label": "Competitors mentioned", "value": "Bellwick Logistics (second quote requested by procurement)", "status": "warn" },
+        { "label": "Risks", "value": "Competing quote; two disputed detention charges; decision due end of November", "status": "warn" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Needs confirmation",
+      "items": [
+        { "status": "warn", "text": "Invoice numbers for the two disputed detention charges were not given on the call." },
+        { "status": "warn", "text": "Saturday shift start (February) is not confirmed. It depends on approval from Quillon's operations director." },
+        { "status": "warn", "text": "No date set for Rosa to send the invoice numbers and dock logs." },
+        { "status": "ok", "text": "Renewal date, proposal deadline and next meeting time were stated on the call." }
+      ]
+    }
+  ]
+}

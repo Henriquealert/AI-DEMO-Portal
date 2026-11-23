@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Invoice header",
+      "items": [
+        { "label": "Supplier", "value": "Quillmere Cleaning Supplies", "status": "none" },
+        { "label": "Invoice no.", "value": "QCS-0913", "status": "none" },
+        { "label": "Invoice date", "value": "2026-10-14", "status": "none" },
+        { "label": "Due date", "value": "2026-10-10", "status": "error" },
+        { "label": "PO number", "value": "Missing (best match PO-7760)", "status": "warn" },
+        { "label": "Terms", "value": "Net 30", "status": "none" },
+        { "label": "Currency", "value": "USD", "status": "none" }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Line items",
+      "columns": [
+        { "label": "SKU", "align": "left" },
+        { "label": "Description", "align": "left" },
+        { "label": "Qty", "align": "right" },
+        { "label": "Unit price", "align": "right" },
+        { "label": "Line total", "align": "right" },
+        { "label": "PO-7760", "align": "left" }
+      ],
+      "rows": [
+        { "cells": ["FC-5G", "Floor cleaner concentrate 5 gal", "8", "$42.00", "$336.00", "Match"], "status": "ok", "note": "" },
+        { "cells": ["NG-L100", "Nitrile gloves L (box of 100)", "20", "$11.50", "$230.00", "Match"], "status": "ok", "note": "" },
+        { "cells": ["PT-12C", "Paper towel rolls (case of 12)", "15", "$27.90", "$418.50", "Qty differs"], "status": "error", "note": "PO-7760 quantity is 12. Billed for 3 extra cases, $83.70 over on this line." }
+      ],
+      "footer": [
+        { "label": "Subtotal (invoice)", "value": "$984.50", "status": "none" },
+        { "label": "Subtotal (recalculated)", "value": "$984.50", "status": "ok" },
+        { "label": "Sales tax 7.25%", "value": "$71.38", "status": "ok" },
+        { "label": "Amount due", "value": "$1,055.88", "status": "none" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "warn", "text": "No PO number on the invoice. Matched to open PO-7760 by supplier and SKUs. Confirm with purchasing." },
+        { "status": "error", "text": "Due date 2026-10-10 is before the invoice date 2026-10-14. With Net 30 it should be 2026-11-13." },
+        { "status": "error", "text": "PT-12C quantity 15 does not match PO-7760 (12)." },
+        { "status": "warn", "text": "Sales tax charged at 7.25%. Check whether these supplies are tax-exempt for Tessaro." },
+        { "status": "ok", "text": "Line totals, subtotal and tax recalculate correctly." }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Hold for review. Missing PO reference, an incorrect due date and a quantity difference. Suggested action: confirm PO-7760 with purchasing and request a corrected invoice."
+    }
+  ]
+}

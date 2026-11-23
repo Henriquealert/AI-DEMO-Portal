@@ -1,0 +1,244 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Week at a glance",
+      "items": [
+        {
+          "label": "Jobs completed",
+          "value": "48 (+1 vs 4-week avg 47.00)",
+          "status": "none"
+        },
+        {
+          "label": "Revenue",
+          "value": "$23,850.00 (+2.8% vs $23,210.00)",
+          "status": "ok"
+        },
+        {
+          "label": "Avg revenue per job",
+          "value": "$496.88 (4-week avg $493.83)",
+          "status": "none"
+        },
+        {
+          "label": "First-time fix rate",
+          "value": "85.4% (41 of 48; 4-week avg 87.8%)",
+          "status": "ok"
+        },
+        {
+          "label": "Callbacks",
+          "value": "3 (4-week avg 3.00)",
+          "status": "ok"
+        },
+        {
+          "label": "Avg rating",
+          "value": "4.4 from 45 rated jobs (4-week avg 4.5)",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "A steady week. The team completed 48 jobs between Monday and Saturday, against a 4-week average of 47.00, and revenue came in at $23,850.00, 2.8% above the average of $23,210.00. Plumbing was the busiest line with 19 jobs and $10,180.00. HVAC did 16 jobs for $7,945.00, and Electrical did 13 jobs for $5,725.00.\n\nQuality held. There were 3 callbacks, one per service line, in line with the average of 3.00. The first-time fix rate was 85.4%, a little under the 4-week average of 87.8%. The average customer rating was 4.4 from 45 rated jobs.\n\nWorth a look: 7 jobs were not fixed on the first visit, and 6 of them sit with three technicians. Marco D. fixed 4 of 6 first time, Sam P. fixed 5 of 7 first time and Luis K. fixed 6 of 8 first time. Ratings are missing on 3 jobs, so it is worth checking that the rating request went out after those visits."
+    },
+    {
+      "type": "chart",
+      "title": "Revenue by service line",
+      "kind": "bar",
+      "unit": "$",
+      "points": [
+        {
+          "label": "Plumbing",
+          "value": 10180
+        },
+        {
+          "label": "HVAC",
+          "value": 7945
+        },
+        {
+          "label": "Electrical",
+          "value": 5725
+        }
+      ],
+      "note": "Total $23,850.00."
+    },
+    {
+      "type": "chart",
+      "title": "Jobs completed per day",
+      "kind": "bar",
+      "unit": "jobs",
+      "points": [
+        {
+          "label": "Mon 10/12",
+          "value": 9
+        },
+        {
+          "label": "Tue 10/13",
+          "value": 9
+        },
+        {
+          "label": "Wed 10/14",
+          "value": 9
+        },
+        {
+          "label": "Thu 10/15",
+          "value": 9
+        },
+        {
+          "label": "Fri 10/16",
+          "value": 8
+        },
+        {
+          "label": "Sat 10/17",
+          "value": 4
+        }
+      ],
+      "note": "2026-10-12 to 2026-10-17."
+    },
+    {
+      "type": "chart",
+      "title": "First-time fix rate by technician",
+      "kind": "bar",
+      "unit": "%",
+      "points": [
+        {
+          "label": "Dana R.",
+          "value": 100
+        },
+        {
+          "label": "Grace T.",
+          "value": 100
+        },
+        {
+          "label": "Luis K.",
+          "value": 75
+        },
+        {
+          "label": "Marco D.",
+          "value": 66.7
+        },
+        {
+          "label": "Owen B.",
+          "value": 100
+        },
+        {
+          "label": "Priya S.",
+          "value": 100
+        },
+        {
+          "label": "Sam P.",
+          "value": 71.4
+        },
+        {
+          "label": "Tom W.",
+          "value": 83.3
+        }
+      ],
+      "note": "Share of each technician's jobs fixed on the first visit. Small job counts swing this a lot."
+    },
+    {
+      "type": "table",
+      "title": "By service line",
+      "columns": [
+        {
+          "label": "Service line",
+          "align": "left"
+        },
+        {
+          "label": "Jobs",
+          "align": "right"
+        },
+        {
+          "label": "Revenue",
+          "align": "right"
+        },
+        {
+          "label": "Callbacks",
+          "align": "right"
+        },
+        {
+          "label": "Avg rating",
+          "align": "right"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Plumbing",
+            "19",
+            "$10,180.00",
+            "1",
+            "4.4"
+          ],
+          "status": "none",
+          "note": ""
+        },
+        {
+          "cells": [
+            "HVAC",
+            "16",
+            "$7,945.00",
+            "1",
+            "4.3"
+          ],
+          "status": "none",
+          "note": ""
+        },
+        {
+          "cells": [
+            "Electrical",
+            "13",
+            "$5,725.00",
+            "1",
+            "4.4"
+          ],
+          "status": "none",
+          "note": ""
+        }
+      ],
+      "footer": [
+        {
+          "label": "Total jobs",
+          "value": "48",
+          "status": "none"
+        },
+        {
+          "label": "Total revenue",
+          "value": "$23,850.00",
+          "status": "none"
+        },
+        {
+          "label": "Total callbacks",
+          "value": "3",
+          "status": "none"
+        },
+        {
+          "label": "Avg rating",
+          "value": "4.4",
+          "status": "none"
+        }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Data checks",
+      "items": [
+        {
+          "status": "warn",
+          "text": "3 jobs have no customer rating (HH-41208, HH-41227, HH-41231). Avg rating uses the 45 rated jobs only."
+        },
+        {
+          "status": "ok",
+          "text": "All 48 counted rows dated 2026-10-12 to 2026-10-17, with a service line, technician and revenue."
+        },
+        {
+          "status": "ok",
+          "text": "Figures computed from 48 rows."
+        },
+        {
+          "status": "none",
+          "text": "Comparisons use the 4-week average for Sep 14 to Oct 10 from the reference data."
+        }
+      ]
+    }
+  ]
+}

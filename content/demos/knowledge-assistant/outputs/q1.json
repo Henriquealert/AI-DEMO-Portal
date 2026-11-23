@@ -1,0 +1,29 @@
+{
+  "blocks": [
+    {
+      "type": "answer",
+      "question": "A patient wants to cancel tomorrow morning's appointment. Do we charge a fee?",
+      "answer": "It depends on the notice. If the patient is cancelling at least 24 hours before the appointment, it is not a late cancellation and no fee applies. With less than 24 hours' notice it is recorded as a late cancellation and a fee may be charged, as listed in the fee schedule at reception. The first late cancellation in any 12-month period is waived, so check the patient's history before charging.",
+      "citations": [
+        {
+          "section": "3.2",
+          "title": "Cancellation notice",
+          "quote": "Cancellations with less than 24 hours' notice are recorded as late cancellations."
+        },
+        {
+          "section": "3.3",
+          "title": "Waiving the fee",
+          "quote": "The first late cancellation in any 12-month period is waived."
+        }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "warn", "text": "The question does not say the appointment time or when the patient called. Check whether there is at least 24 hours' notice." },
+        { "status": "warn", "text": "The fee amount is not in the handbook. It is listed in the fee schedule at reception." }
+      ]
+    }
+  ]
+}

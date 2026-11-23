@@ -1,0 +1,27 @@
+BRINDLECOVE PACKAGING CO.                                   INVOICE
+Fictional supplier for demonstration only
+
+Remit to: ar.brindlecove@example.com
+Supplier ID: BPC-0042
+
+Bill to:  Tessaro Distribution, Accounts Payable
+          ap.tessaro@example.com
+
+Invoice no.:    INV-20418
+Invoice date:   2026-10-12
+Due date:       2026-11-11
+PO number:      PO-7731
+Terms:          Net 30
+
+SKU       Description                    Qty    Unit price    Amount
+--------  -----------------------------  -----  ----------  --------
+BX-1218   Corrugated box 12x12x18          500       1.42     710.00
+TP-48C    Packing tape 48mm clear          144       2.15     309.60
+SW-18     Stretch wrap 18in roll            40      18.75     750.00
+
+                                          Subtotal          1,769.60
+                                          Freight               0.00
+                                          Sales tax (resale)    0.00
+                                          TOTAL DUE (USD)   1,769.60
+
+Thank you for your business.

@@ -1,0 +1,77 @@
+{
+  "blocks": [
+    {
+      "type": "fields",
+      "title": "Quote",
+      "items": [
+        { "label": "Quote no.", "value": "VQ-2026-0412 (draft)", "status": "none" },
+        { "label": "Customer", "value": "Halberd Controls", "status": "none" },
+        { "label": "Contact", "value": "Dana Morrow, Purchasing Lead (dana.morrow@example.com)", "status": "none" },
+        { "label": "Date", "value": "Nov 16, 2026", "status": "none" },
+        { "label": "Valid until", "value": "Dec 16, 2026", "status": "none" },
+        { "label": "Payment terms", "value": "Net 30 (sample)", "status": "none" }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Line items",
+      "columns": [
+        { "label": "SKU", "align": "left" },
+        { "label": "Description", "align": "left" },
+        { "label": "Qty", "align": "right" },
+        { "label": "Unit price", "align": "right" },
+        { "label": "Line total", "align": "right" }
+      ],
+      "rows": [
+        {
+          "cells": ["VM-ENC-1612", "Wall-mount enclosure 16 x 12 x 8 in, 14 ga steel, gray powder coat", "40", "$196.50", "$7,860.00"],
+          "status": "ok",
+          "note": "SKU given in request."
+        },
+        {
+          "cells": ["VM-PNL-1612", "Back panel for 16 x 12 enclosures, galvanized steel", "40", "$24.40", "$976.00"],
+          "status": "ok",
+          "note": "Matched from \"matching back panels for the 16 x 12 boxes\"."
+        },
+        {
+          "cells": ["VM-BRK-WM", "Wall-mount bracket kit for wall enclosures (pair)", "40", "$21.00", "$840.00"],
+          "status": "ok",
+          "note": "Priced per pair. Request asked for 40 pairs."
+        },
+        {
+          "cells": ["VM-BRK-L4", "L-bracket 4 x 4 in, 11 ga steel, zinc plated", "150", "$3.95", "$592.50"],
+          "status": "ok",
+          "note": "100+ volume price applied ($4.60 list)."
+        },
+        {
+          "cells": ["VM-HDW-DL", "Quarter-turn door latch kit, keyed", "80", "$9.40", "$752.00"],
+          "status": "ok",
+          "note": "Matched from \"quarter-turn door latch kits\"."
+        }
+      ],
+      "footer": [
+        { "label": "Subtotal", "value": "$11,020.50", "status": "none" },
+        { "label": "Freight", "value": "To be confirmed", "status": "warn" },
+        { "label": "Total", "value": "$11,020.50 + freight", "status": "none" }
+      ]
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "ok", "text": "All 5 requested items matched to the price list (2 by SKU, 3 by description)." },
+        { "status": "ok", "text": "All quantities meet the minimum order quantity on the price list." },
+        { "status": "ok", "text": "Volume price applied to VM-BRK-L4 (150 units, 100+ break). No other line reaches 100 units." },
+        { "status": "warn", "text": "Freight not priced. Request asks for one shipment to the main plant dock; delivery address and freight need confirming." },
+        { "status": "warn", "text": "Customer would like delivery before mid-December. Lead time is not on the price list; confirm with production before promising a date." }
+      ]
+    },
+    {
+      "type": "email",
+      "title": "Cover email (draft)",
+      "to": "dana.morrow@example.com",
+      "subject": "Quote VQ-2026-0412: Line 3 control panel enclosures",
+      "body": "Hi Dana,\n\nThanks for the request. Attached is quote VQ-2026-0412 for the Line 3 enclosures, back panels, bracket kits, L-brackets and door latch kits.\n\nThe subtotal is $11,020.50. The L-brackets are priced at our 100+ rate. Freight is not included yet: we will confirm the cost for a single shipment to your main plant dock, along with a delivery date against your mid-December target.\n\nThe quote is valid until Dec 16, 2026, on Net 30 terms. Reply to this email or call us if you want to change any quantities.\n\nBest regards,\nVantrell Manufacturing Sales"
+    }
+  ]
+}

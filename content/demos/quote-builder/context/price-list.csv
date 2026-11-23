@@ -1,0 +1,19 @@
+sku,description,unit,unit_price,min_qty,price_100plus
+VM-ENC-1210,"Wall-mount enclosure 12 x 10 x 6 in, 16 ga steel, gray powder coat",each,148.00,1,136.00
+VM-ENC-1612,"Wall-mount enclosure 16 x 12 x 8 in, 14 ga steel, gray powder coat",each,196.50,1,181.00
+VM-ENC-2416,"Wall-mount enclosure 24 x 16 x 8 in, 14 ga steel, gray powder coat",each,284.00,1,262.00
+VM-ENC-SS1210,"Wall-mount enclosure 12 x 10 x 6 in, 304 stainless steel",each,312.00,1,289.00
+VM-ENC-FS7224,"Floor-standing enclosure 72 x 24 x 20 in, 12 ga steel",each,1465.00,1,1395.00
+VM-PNL-1210,"Back panel for 12 x 10 enclosures, galvanized steel",each,18.75,10,16.50
+VM-PNL-1612,"Back panel for 16 x 12 enclosures, galvanized steel",each,24.40,10,21.90
+VM-PNL-2416,"Back panel for 24 x 16 enclosures, galvanized steel",each,36.80,10,33.10
+VM-BRK-L2,"L-bracket 2 x 2 in, 11 ga steel, zinc plated",each,2.85,50,2.40
+VM-BRK-L4,"L-bracket 4 x 4 in, 11 ga steel, zinc plated",each,4.60,50,3.95
+VM-BRK-Z3,"Z-bracket 3 in offset, 11 ga steel, zinc plated",each,5.25,50,4.50
+VM-BRK-WM,"Wall-mount bracket kit for wall enclosures (pair)",pair,21.00,10,18.50
+VM-STR-1610,"Strut channel 1-5/8 in x 10 ft, 12 ga, pre-galvanized",length,38.90,10,34.60
+VM-FAB-GP06,"Gusset plate 6 x 6 in, 1/4 in steel, plain finish",each,7.80,25,6.90
+VM-FAB-BP08,"Base plate 8 x 8 in, 3/8 in steel, four 9/16 in holes",each,14.20,25,12.60
+VM-HDW-DL,"Quarter-turn door latch kit, keyed",each,9.40,10,8.20
+VM-HDW-GL,"Grounding lug kit",each,3.15,25,2.70
+VM-ACC-VK,"Louver vent kit with filter, for wall enclosures",each,27.50,5,24.75

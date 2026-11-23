@@ -1,0 +1,17 @@
+{
+  "blocks": [
+    {
+      "type": "answer",
+      "question": "Where can staff park when they come in for the early shift?",
+      "answer": "The staff handbook does not cover staff parking. Please ask the practice manager.",
+      "citations": []
+    },
+    {
+      "type": "checks",
+      "title": "Checks",
+      "items": [
+        { "status": "warn", "text": "Not covered in the handbook. No answer was given to avoid guessing. Ask the practice manager." }
+      ]
+    }
+  ]
+}
